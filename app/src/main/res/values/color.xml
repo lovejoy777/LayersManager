@@ -6,6 +6,11 @@
     <color name="main">#6495ED</color>
     <color name="test">#FFFFFF</color>
 
+    <!-- Change modify button colors -->
+    <color name="appirator_button_start_color">#ff449def</color>
+    <color name="appirator_button_end_color">#ff2f6699</color>
+    <color name="appirator_button_text_color">#ffffffff</color>
+
     <color name="notepad_paper">#AAFFFF99</color>
     <color name="notepad_lines">#FF0000FF</color>
     <color name="notepad_margin">#90FF0000</color>

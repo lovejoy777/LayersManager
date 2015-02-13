@@ -26,7 +26,7 @@ public class Settings extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        LoadTheme();
+        LoadPrefs();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 
@@ -35,7 +35,6 @@ public class Settings extends Activity implements View.OnClickListener {
         b.setOnClickListener(this);
 
         ImageButton xdaButton = (ImageButton) findViewById(R.id.xdaButton);
-        LoadPrefs();
 
         xdaButton.setOnClickListener(new View.OnClickListener() {
 
@@ -45,31 +44,6 @@ public class Settings extends Activity implements View.OnClickListener {
 
             }
         });
-    }
-
-    private void LoadPrefs() {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean cbValue = sp.getBoolean("CHECKBOX", false);
-        if(cbValue){
-            }else{
-            cb.setChecked(false);
-
-            }
-
-    }
-
-    private void LoadTheme() {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean cbValue = sp.getBoolean("CHECKBOX", false);
-        if(cbValue){
-            setTheme(R.style.DarkTheme);
-
-        }else{
-            setTheme(R.style.LightTheme);
-
-        }
-
-
     }
 
     private void savePrefs(String key, boolean value) {
@@ -103,6 +77,17 @@ public class Settings extends Activity implements View.OnClickListener {
                 .getExternalStorageDirectory().getPath());
 
         rootAccess();
+    }
+
+    private void LoadPrefs() {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean cbValue = sp.getBoolean("CHECKBOX", false);
+        if(cbValue){
+            setTheme(R.style.DarkTheme);
+
+        }else{
+            setTheme(R.style.LightTheme);
+        }
     }
 
     public static boolean showHiddenFiles() {

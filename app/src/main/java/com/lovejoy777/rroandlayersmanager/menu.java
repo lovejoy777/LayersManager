@@ -3,6 +3,7 @@ package com.lovejoy777.rroandlayersmanager;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MenuItem;
@@ -20,17 +21,16 @@ public class menu extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         LoadPrefs();
-        Appirater.appLaunched(this);
         RootTools.debugMode = true; //ON
         if (RootTools.isAccessGiven()) {
-            // your app has been granted root access
+        // your app has been granted root access
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
             Button buttonlayers = (Button) findViewById(R.id.buttonlayers);
+            Button buttondllayers = (Button) findViewById(R.id.buttondllayers);
 
 
             buttonlayers.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +40,18 @@ public class menu extends Activity {
                     startActivity(new Intent("com.lovejoy777.rroandlayersmanager.LAYERS"));
                 }
             });
+
+            buttondllayers.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/themes/0-themes-official-mega-rro-themes-t3011075")));
+
+
+                }
+            });
+
+
 
         }else {
             Toast.makeText(menu.this, "Your device doesn't seem to be rooted", Toast.LENGTH_LONG).show();
@@ -108,7 +120,6 @@ public class menu extends Activity {
     }
 
     private void LoadPrefs() {
-        //cb = (CheckBox) findViewById(R.id.checkBoxDark);
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         boolean cbValue = sp.getBoolean("CHECKBOX", false);
         if(cbValue){

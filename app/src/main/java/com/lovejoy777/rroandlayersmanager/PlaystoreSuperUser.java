@@ -12,8 +12,6 @@ import android.preference.PreferenceManager;
  */
 public class PlaystoreSuperUser extends Activity {
 
-    //Button Btn1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
@@ -30,7 +28,6 @@ public class PlaystoreSuperUser extends Activity {
     }
 
     private void LoadPrefs() {
-        //cb = (CheckBox) findViewById(R.id.checkBoxDark);
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         boolean cbValue = sp.getBoolean("CHECKBOX", false);
         if(cbValue){

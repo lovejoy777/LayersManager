@@ -20,7 +20,7 @@ import java.util.Stack;
  */
 public class DeleteLayersChooser extends ListActivity {
 
-    static final String TAG = "sion";
+    static final String TAG = "Layers";
 
     private File currentDir;
     private FileArrayAdapter adapter;
@@ -28,10 +28,7 @@ public class DeleteLayersChooser extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
         super.onCreate(savedInstanceState);
-
         String startdir = "/vendor/overlay";
-        //system/etc/init.d
-
         currentDir = new File(startdir);
         fill(currentDir);
     }

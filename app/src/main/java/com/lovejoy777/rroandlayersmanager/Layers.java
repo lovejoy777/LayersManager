@@ -6,8 +6,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -22,7 +20,7 @@ import java.io.IOException;
 
 public class Layers extends Activity {
 
-    static final String TAG = "sion";
+    static final String TAG = "Layers";
     CheckBox cb;
 
     @Override
@@ -39,9 +37,6 @@ public class Layers extends Activity {
         Button rebootbutton = (Button) findViewById(R.id.rebootbutton);
         Button deletelayerschooserbutton = (Button) findViewById(R.id.deletelayerschooserbutton);
 
-
-
-
         Intent extras = getIntent();
         // gets the string of source path for text veiw
         String sourcezippath = null;
@@ -55,34 +50,24 @@ public class Layers extends Activity {
         buttonlayerschooser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent("com.sion.lovejoy777sa.sion.LAYERSCHOOSER"));
+                startActivity(new Intent("com.lovejoy777.rroandlayersmanager.LAYERSCHOOSER"));
             }
         });
 
 
         // INSTALL BUTTON
         if (sourcezippath != null)
-            //layersinstallbutton.setVisibility(View.VISIBLE);
             layersinstallbutton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    //command1();
                     Intent extras = getIntent();
 
                     if (extras != null) {
                         String sourcezipname = extras.getStringExtra("key3");
-                        String iszip = ".zip";
 
                         if (sourcezipname != null && !sourcezipname.isEmpty()) {
-                            if (sourcezipname.endsWith(iszip)) {
-
                                 oninstallClick();
-
-                            }else {
-                                Toast.makeText(Layers.this, "Invalid File", Toast.LENGTH_LONG).show();
-                                finish();
-                            }
 
                         }else {
                             Toast.makeText(Layers.this, "Please Choose a File", Toast.LENGTH_LONG).show();
@@ -107,7 +92,7 @@ public class Layers extends Activity {
             public void onClick(View v) {
 
 
-                startActivity(new Intent("com.sion.lovejoy777sa.sion.DELETELAYERSCHOOSER"));
+                startActivity(new Intent("com.lovejoy777.rroandlayersmanager.DELETELAYERSCHOOSER"));
             }
         });
 
@@ -126,8 +111,6 @@ public class Layers extends Activity {
                 }
 
             });
-
-
         }
         // Delete All Layers Button
         deleteallbutton.setOnClickListener(new View.OnClickListener() {
@@ -138,7 +121,6 @@ public class Layers extends Activity {
                 command5(); // delete chosen file
 
             }
-
         });
     }
 
@@ -146,7 +128,6 @@ public class Layers extends Activity {
         Intent extras = getIntent();
         String SZN = extras.getStringExtra("key3");
         String SZP = extras.getStringExtra("key1");
-        //String iszip = ".zip";
 
         Intent iIntent;
         iIntent = new Intent(this, WaitLayers.class);
@@ -160,7 +141,6 @@ public class Layers extends Activity {
     // COMMAND 3 DELETE CHOSEN FILE
     public void command3() {
         CheckBox deletecb = (CheckBox) findViewById(R.id.deletecb);
-
         Intent extras = getIntent();
         String SZP = extras.getStringExtra("key1");
 
@@ -173,7 +153,7 @@ public class Layers extends Activity {
 
             } else {
                 Toast.makeText(Layers.this, "Confirm with checkbox", Toast.LENGTH_LONG).show();
-                //finish();
+
             }
         finish();
     }
@@ -181,10 +161,8 @@ public class Layers extends Activity {
     // COMMAND 5 DELETE CHOSEN FILE
     public void command5() {
 
-
         String delall = "/vendor/overlay/";
         CheckBox deletecb = (CheckBox) findViewById(R.id.deletecb);
-
 
         if (deletecb.isChecked()) {
             RootTools.remount("/system", "RW");
@@ -194,7 +172,6 @@ public class Layers extends Activity {
             RootTools.remount("/system", "RO");
         } else {
             Toast.makeText(Layers.this, "Confirm with checkbox", Toast.LENGTH_LONG).show();
-            //finish();
         }
         finish();
     }
@@ -224,8 +201,6 @@ public class Layers extends Activity {
     }
 
     private void LoadPrefs() {
-
-
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         boolean cbValue = sp.getBoolean("CHECKBOX", false);
         if(cbValue){
@@ -235,10 +210,5 @@ public class Layers extends Activity {
             setTheme(R.style.LightTheme);
 
         }
-
-
     }
-
-
-
 }

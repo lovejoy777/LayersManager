@@ -20,7 +20,7 @@ import java.util.Stack;
  * Created by lovejoy on 05/02/15.
  */
 public class LayersChooser extends ListActivity {
-    static final String TAG = "sion";
+    static final String TAG = "Layers";
 
     private File currentDir;
     private FileArrayAdapter adapter;

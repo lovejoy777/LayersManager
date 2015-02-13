@@ -6,7 +6,8 @@
 
     <!-- Home Screen -->
     <string name="homeTitle">Home</string>
-    <string name="homebutton3txt">Layers Installer</string>
+    <string name="homebutton1txt">Layers Installer</string>
+    <string name="homebutton2txt">Download Layers</string>
 
     <!-- layers installer -->
     <string name="yourpathhint">Your path will appear here</string>
@@ -84,13 +85,6 @@
     <string name="romtitlechoose">Choose Files</string>
     <string name="imageReference">this is an image</string>
 
-    <!-- App Rater -->
-    <string name="appirator_app_title">Layers</string>
-    <string name="appirator_market_url">market://details?id=%s</string>
-    <string name="rate_title">Rate Layers</string>
-    <string name="rate_message">If you enjoy using Layers, would you mind taking a moment to rate it? Thanks for your support!</string>
-    <string name="rate">Yes, Rate Layers</string>
-    <string name="rate_later">Remind me later</string>
-    <string name="rate_cancel">No, Thanks</string>
+
 
 </resources>

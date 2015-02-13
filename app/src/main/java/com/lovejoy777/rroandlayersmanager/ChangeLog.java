@@ -19,14 +19,12 @@ public class ChangeLog extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.changelog);
 
-        LoadPrefs();
-
         ImageButton xdaButton = (ImageButton) findViewById(R.id.xdaButton1);
         xdaButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/sion-flashable-zips-init-d-installer-t2992612/post57934168#post57934168")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/official-layers-bitsyko-apps-rro-t3012172")));
 
 
             }
@@ -34,7 +32,6 @@ public class ChangeLog extends Activity {
     }
 
     private void LoadPrefs() {
-        //cb = (CheckBox) findViewById(R.id.checkBoxDark);
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         boolean cbValue = sp.getBoolean("CHECKBOX", false);
         if(cbValue){
