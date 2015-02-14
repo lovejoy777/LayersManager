@@ -60,7 +60,8 @@
             android:layout_alignParentEnd="true"
             android:layout_toRightOf="@+id/imageView10"
             android:layout_below="@+id/tvlayerspath"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            style="@style/Button" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -83,7 +84,8 @@
             android:layout_toRightOf="@+id/imageView10"
             android:layout_toEndOf="@+id/imageView10"
             android:layout_below="@+id/buttonlayerschooser"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            style="@style/Button" />
 
 
         <ImageView
@@ -108,7 +110,8 @@
             android:layout_toRightOf="@+id/imageView10"
             android:layout_toEndOf="@+id/imageView10"
             android:layout_below="@+id/layersinstallbutton"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            style="@style/Button" />
 
 
 
@@ -142,7 +145,8 @@
             android:layout_toRightOf="@+id/imageView10"
             android:layout_toEndOf="@+id/imageView10"
             android:layout_below="@+id/textView21"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            style="@style/Button" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -177,7 +181,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_alignRight="@+id/imageView3"
-            android:layout_alignEnd="@+id/imageView3" />
+            android:layout_alignEnd="@+id/imageView3"
+            style="@style/Button" />
 
         <Button
             android:layout_width="wrap_content"
@@ -190,7 +195,8 @@
             android:layout_alignTop="@+id/deletebutton"
             android:layout_alignBottom="@+id/deletebutton"
             android:layout_toRightOf="@+id/deletebutton"
-            android:layout_toEndOf="@+id/deletebutton" />
+            android:layout_toEndOf="@+id/deletebutton"
+            style="@style/Button" />
 
 
     </RelativeLayout>
