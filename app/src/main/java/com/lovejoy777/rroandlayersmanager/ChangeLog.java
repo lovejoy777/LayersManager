@@ -26,7 +26,6 @@ public class ChangeLog extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/official-layers-bitsyko-apps-rro-t3012172")));
 
-
             }
         });
     }
@@ -39,9 +38,6 @@ public class ChangeLog extends Activity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
-
-
     }
 }

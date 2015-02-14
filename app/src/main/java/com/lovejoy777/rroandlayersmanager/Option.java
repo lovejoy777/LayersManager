@@ -8,13 +8,14 @@ public class Option implements Comparable<Option> {
     private String name;
     private String data;
     private String path;
-
     public Option(String n, String d, String p)
+
     {
         name = n;
         data = d;
         path = p;
     }
+
     public String getName()
     {
         return name;
@@ -27,6 +28,7 @@ public class Option implements Comparable<Option> {
     {
         return path;
     }
+
     @Override
     public int compareTo(Option o) {
         if(this.name != null)

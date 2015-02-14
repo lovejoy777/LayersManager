@@ -128,6 +128,5 @@ public class DeleteLayersChooser extends ListActivity {
             setTheme(R.style.LightTheme);
         }
     }
-
 }
 

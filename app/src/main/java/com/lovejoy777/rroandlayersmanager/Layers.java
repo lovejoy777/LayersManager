@@ -17,7 +17,6 @@ import com.stericson.RootTools.RootTools;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-
 public class Layers extends Activity {
 
     static final String TAG = "Layers";
@@ -26,8 +25,6 @@ public class Layers extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
-        String siondata = getApplicationInfo().dataDir + "/overlay";
-        String siondatainstalled = getApplicationInfo().dataDir + "/installed";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layers);
         Button buttonlayerschooser = (Button) findViewById(R.id.buttonlayerschooser);
@@ -56,7 +53,6 @@ public class Layers extends Activity {
             }
         });
 
-
         // INSTALL BUTTON
         if (sourcezippath != null)
             layersinstallbutton.setOnClickListener(new View.OnClickListener() {
@@ -80,10 +76,8 @@ public class Layers extends Activity {
 
         // REBOOT BUTTON
         rebootbutton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-
                 command4(); // reboot device
             }
         });
@@ -92,36 +86,25 @@ public class Layers extends Activity {
         deletelayerschooserbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 startActivity(new Intent("com.lovejoy777.rroandlayersmanager.DELETELAYERSCHOOSER"));
             }
         });
 
         // DELETE FILE CHOOSER BUTTON BUTTON
-
         if (sourcezippath != null) {
-
-            // Delete Chosen Layer Button
             deletebutton.setOnClickListener(new View.OnClickListener() {
-
                 @Override
                 public void onClick(View v) {
-
-                    command3(); // delete chosen file
-
+                    command3(); // DELETE CHOSEN LAYER
                 }
-
             });
         }
-        // Delete All Layers Button
-        deleteallbutton.setOnClickListener(new View.OnClickListener() {
 
+        // DELETE ALL LAYERS BUTTON
+        deleteallbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                command5(); // delete chosen file
-
+                command5(); // DELETE ALL LAYERS
             }
         });
     }
@@ -148,14 +131,13 @@ public class Layers extends Activity {
 
         if (SZP.length() >= 1)
             if (deletecb.isChecked()) {
-                RootTools.remount("/system", "RW");
+               // RootTools.remount("/system", "RW");
                 RootTools.deleteFileOrDirectory(SZP, true);
                 Toast.makeText(Layers.this, "Delete Successful", Toast.LENGTH_LONG).show();
-                RootTools.remount("/system", "RO");
+               // RootTools.remount("/system", "RO");
 
             } else {
                 Toast.makeText(Layers.this, "Confirm with checkbox", Toast.LENGTH_LONG).show();
-
             }
         finish();
     }
@@ -164,7 +146,6 @@ public class Layers extends Activity {
     public void command5() {
         String siondata = getApplicationInfo().dataDir + "/overlay";
         String siondatainstalled = getApplicationInfo().dataDir + "/installed";
-
         String delall = "" + siondatainstalled;
         CheckBox deletecb = (CheckBox) findViewById(R.id.deletecb);
 
@@ -172,7 +153,6 @@ public class Layers extends Activity {
            // RootTools.remount("/system", "RW");
             RootTools.deleteFileOrDirectory(delall, true);
             Toast.makeText(Layers.this, "Delete Successful", Toast.LENGTH_LONG).show();
-
           //  RootTools.remount("/system", "RO");
         } else {
             Toast.makeText(Layers.this, "Confirm with checkbox", Toast.LENGTH_LONG).show();
@@ -181,9 +161,7 @@ public class Layers extends Activity {
     }
 
     // COMMAND 4, REBOOT DEVICE
-
     public void command4(){
-
         try {
             Toast.makeText(Layers.this, "Rebooting", Toast.LENGTH_LONG).show();
             Process proc = Runtime.getRuntime().exec("su");
@@ -212,7 +190,6 @@ public class Layers extends Activity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
     }
 }

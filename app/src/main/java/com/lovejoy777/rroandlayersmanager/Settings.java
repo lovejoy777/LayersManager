@@ -23,7 +23,6 @@ public class Settings extends Activity implements View.OnClickListener {
     CheckBox cb;
     ImageButton b;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
@@ -35,13 +34,10 @@ public class Settings extends Activity implements View.OnClickListener {
         b.setOnClickListener(this);
 
         ImageButton xdaButton = (ImageButton) findViewById(R.id.xdaButton);
-
         xdaButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/official-layers-bitsyko-apps-rro-t3012172")));
-
             }
         });
     }
@@ -54,20 +50,15 @@ public class Settings extends Activity implements View.OnClickListener {
         edit.commit();
     }
 
-
-
     @Override
     public void onClick(View view) {
-
         savePrefs("CHECKBOX", cb.isChecked());
         Toast.makeText(Settings.this, "Theme choice saved\nPlease restart Layers Manager", Toast.LENGTH_LONG).show();
-
     }
 
     private static boolean mShowHiddenFiles;
     private static boolean mRootAccess;
     public static String defaultdir;
-
     public static void updatePreferences(Context context) {
         SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(context);
 
@@ -93,10 +84,8 @@ public class Settings extends Activity implements View.OnClickListener {
     public static boolean showHiddenFiles() {
         return mShowHiddenFiles;
     }
-
     public static boolean rootAccess() {
         return mRootAccess && RootTools.isAccessGiven();
     }
-
 
 }

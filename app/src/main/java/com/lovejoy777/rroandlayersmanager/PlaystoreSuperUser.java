@@ -23,8 +23,6 @@ public class PlaystoreSuperUser extends Activity {
         } catch (android.content.ActivityNotFoundException anfe) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
         }
-
-
     }
 
     private void LoadPrefs() {
@@ -35,10 +33,7 @@ public class PlaystoreSuperUser extends Activity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
-
-
     }
 }
 

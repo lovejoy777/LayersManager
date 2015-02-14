@@ -18,7 +18,6 @@ import com.stericson.RootTools.RootTools;
  */
 public class menu extends Activity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
@@ -32,34 +31,27 @@ public class menu extends Activity {
             Button buttonlayers = (Button) findViewById(R.id.buttonlayers);
             Button buttondllayers = (Button) findViewById(R.id.buttondllayers);
 
-
             buttonlayers.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
                     startActivity(new Intent("com.lovejoy777.rroandlayersmanager.LAYERS"));
                 }
             });
 
             buttondllayers.setOnClickListener(new View.OnClickListener() {
-
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/themes/0-themes-official-mega-rro-themes-t3011075")));
-
-
                 }
             });
-
-
 
         }else {
             Toast.makeText(menu.this, "Your device doesn't seem to be rooted", Toast.LENGTH_LONG).show();
             Intent intent0 = new Intent();
             intent0.setClass(this, PlaystoreSuperUser.class);
             startActivity(intent0);
-            finish();
 
+            finish();
         }
     }
 
@@ -104,7 +96,6 @@ public class menu extends Activity {
                 startActivity(intent4);
                 break;
 
-
         }
         return super.onOptionsItemSelected(item);
     }
@@ -127,12 +118,6 @@ public class menu extends Activity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
-
-
     }
-
-
-
 }

@@ -25,9 +25,6 @@ public class Instructions extends Activity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
-
-
     }
 }

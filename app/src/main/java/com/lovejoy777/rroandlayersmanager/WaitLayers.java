@@ -16,7 +16,6 @@ import com.stericson.RootTools.execution.CommandCapture;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -24,9 +23,6 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
-
-import util.FileUtil;
-
 
 /**
  * Created by lovejoy on 05/02/15.
@@ -52,7 +48,6 @@ public class WaitLayers extends Activity {
                         initcommand1();
                     }
                 }, 2000);
-
         }
     }
 
@@ -311,6 +306,4 @@ public class WaitLayers extends Activity {
             setTheme(R.style.LightTheme);
         }
     }
-
-
 }

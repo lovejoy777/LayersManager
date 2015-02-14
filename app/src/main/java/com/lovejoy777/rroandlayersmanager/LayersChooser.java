@@ -128,7 +128,6 @@ public class LayersChooser extends ListActivity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
     }
 }

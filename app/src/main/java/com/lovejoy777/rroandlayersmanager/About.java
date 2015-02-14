@@ -14,7 +14,6 @@ import android.widget.ImageButton;
  */
 public class About extends Activity {
 
-    //Button Btn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,6 @@ public class About extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/official-layers-bitsyko-apps-rro-t3012172")));
 
-
             }
         });
 
@@ -41,10 +39,8 @@ public class About extends Activity {
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/themes/0-themes-official-mega-rro-themes-t3011075")));
 
-
             }
         });
-
     }
 
     private void LoadPrefs() {
@@ -55,9 +51,6 @@ public class About extends Activity {
 
         }else{
             setTheme(R.style.LightTheme);
-
         }
-
-
     }
 }
