@@ -12,12 +12,12 @@
     <!-- layers installer -->
     <string name="yourpathhint">Your path will appear here</string>
     <string name="layersTitle">Install layers</string>
-    <string name="layersbutton1txt">Choose Your layers.zip\nthat you predownloaded</string>
+    <string name="layersbutton1txt">Select Layer to install</string>
     <string name="layersbutton2txt">Install Your Chosen layers</string>
     <string name="layersbutton3txt">Reboot Your Device\nfor your layers to take effect</string>
     <string name="layersbutton4txt">Installed Layers</string>
-    <string name="layersbutton5txt">Delete your\nchosen layer</string>
-    <string name="layersbutton6txt">Delete All\nInstalled layers</string>
+    <string name="layersbutton5txt">Delete selected</string>
+    <string name="layersbutton6txt">Delete All</string>
     <string name="deletelayersTitle">Delete layer</string>
     <string name="layersconfirmdel">  Tick to activate Delete buttons</string>
 
