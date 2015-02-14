@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Layers Manager</string>
-    <string name="version">version 0.01</string>
+    <string name="version">version 0.03</string>
 
     <!-- Home Screen -->
     <string name="homeTitle">Home</string>
@@ -66,7 +66,7 @@
 
     <string name="changelog1">Changelog</string>
     <string name="changelog">
-    \nVersion 0.01
+    \nVersion 0.03
     \n
     \nPlease visit the Layers XDA thread.
 

@@ -100,8 +100,10 @@ public class LayersChooser extends ListActivity {
 
     private void onFileClick(Option o)
     {
+        String siondata = getApplicationInfo().dataDir + "/overlay";
+        String siondatainstalled = getApplicationInfo().dataDir + "/installed";
         String SZP = "" + o.getPath();
-        String systdest = "/vendor/overlay/";
+        String systdest = "" + siondatainstalled;
         String SZN = "" + o.getName();
 
         Intent iIntent = new Intent(this, Layers.class);

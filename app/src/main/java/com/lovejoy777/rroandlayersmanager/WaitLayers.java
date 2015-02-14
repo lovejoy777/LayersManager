@@ -16,6 +16,7 @@ import com.stericson.RootTools.execution.CommandCapture;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -23,6 +24,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+
+import util.FileUtil;
 
 
 /**
@@ -36,7 +39,6 @@ public class WaitLayers extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waitlayers);
 
@@ -64,7 +66,7 @@ public class WaitLayers extends Activity {
             String SZN = extras.getStringExtra("key3");
             String SZP = extras.getStringExtra("key1");
             String siondata = getApplicationInfo().dataDir + "/overlay";
-            String overlaypath = "/vendor";
+            String siondatainstalled = getApplicationInfo().dataDir + "/installed";
             String iszip = ".zip";
 
 
@@ -87,6 +89,7 @@ public class WaitLayers extends Activity {
                         // UNZIP & MOVE TO SION DATA OVERLAY FOLDER
                         unzip(SZP, siondata);
 
+
                         // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
                         CommandCapture command = new CommandCapture(0, "chmod -R 666 " + siondata + "/");
                         RootTools.getShell(true).add(command);
@@ -94,117 +97,118 @@ public class WaitLayers extends Activity {
                             Thread.sleep(1);
                         }
 
-                        RootTools.remount("/system", "RW");
+                        //RootTools.remount("/system", "RW");
 
                         // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
-                        CommandCapture command1 = new CommandCapture(0, "mkdir /vendor/overlay");
+                        CommandCapture command1 = new CommandCapture(0, "mkdir " + siondatainstalled);
                         RootTools.getShell(true).add(command1);
                         while (!command1.isFinished()) {
                             Thread.sleep(1);
                         }
 
                         // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
-                        CommandCapture command2 = new CommandCapture(0, "chmod -R 777 /vendor/overlay");
+                        CommandCapture command2 = new CommandCapture(0, "chmod -R 777 " + siondatainstalled);
                         RootTools.getShell(true).add(command2);
                         while (!command2.isFinished()) {
                             Thread.sleep(1);
                         }
 
                         // COPY NEW FILES TO /VENDOR/OVERLAY FOLDER
-                        RootCommands.moveCopyRoot(siondata + "/", overlaypath);
+                        RootCommands.moveCopyRoot(siondata + "/", siondatainstalled);
 
                         // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
-                        CommandCapture command3 = new CommandCapture(0, "chmod -R 666 /vendor/overlay");
+                        CommandCapture command3 = new CommandCapture(0, "chmod -R 666 " + siondatainstalled);
                         RootTools.getShell(true).add(command3);
                         while (!command3.isFinished()) {
                             Thread.sleep(1);
                         }
 
                         // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER BACK TO 777
-                        CommandCapture command4 = new CommandCapture(0, "chmod 777 /vendor/overlay");
+                        CommandCapture command4 = new CommandCapture(0, "chmod 777 " + siondatainstalled);
                         RootTools.getShell(true).add(command4);
                         while (!command4.isFinished()) {
                             Thread.sleep(1);
-                            RootTools.remount("/system", "RO");
+                            //     RootTools.remount("/system", "RO");
 
+                        }
                             finish();
+
+                        }else{
+                            // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
+                            CommandCapture command1 = new CommandCapture(0, "mkdir " + siondata);
+                            RootTools.getShell(true).add(command1);
+                            while (!command1.isFinished()) {
+                                Thread.sleep(1);
+                            }
+
+                            // ELSE NOT A .ZIP THEN COPY FILE TO SIONDATA
+                            CommandCapture command5 = new CommandCapture(0, "cp -f " + SZP + " " + siondata + "/");
+                            RootTools.getShell(true).add(command5);
+                            while (!command5.isFinished()) {
+                                Thread.sleep(1);
+                            }
+
+                            // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
+                            CommandCapture command6 = new CommandCapture(0, "chmod -R 666 " + siondata + "/");
+                            RootTools.getShell(true).add(command6);
+                            while (!command6.isFinished()) {
+                                Thread.sleep(1);
+                            }
+
+                            // RootTools.remount("/system", "RW");
+
+                            // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
+                            CommandCapture command7 = new CommandCapture(0, "mkdir " + siondatainstalled);
+                            RootTools.getShell(true).add(command7);
+                            while (!command7.isFinished()) {
+                                Thread.sleep(1);
+                            }
+
+                            // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
+                            CommandCapture command8 = new CommandCapture(0, "chmod -R 777 " + siondatainstalled);
+                            RootTools.getShell(true).add(command8);
+                            while (!command8.isFinished()) {
+                                Thread.sleep(1);
+                            }
+
+                            // COPY NEW FILES TO /VENDOR/OVERLAY FOLDER
+                            RootCommands.moveCopyRoot(siondata + "/", siondatainstalled);
+
+                            // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
+                            CommandCapture command9 = new CommandCapture(0, "chmod -R 666 " + siondatainstalled);
+                            RootTools.getShell(true).add(command9);
+                            while (!command9.isFinished()) {
+                                Thread.sleep(1);
+                            }
+
+                            // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER BACK TO 777
+                            CommandCapture command10 = new CommandCapture(0, "chmod 777 " + siondatainstalled);
+                            RootTools.getShell(true).add(command10);
+                            while (!command10.isFinished()) {
+                                Thread.sleep(1);
+                                //   RootTools.remount("/system", "RO");
+                            }
                         }
+                        // CLOSE ALL SHELLS
+                        //  RootTools.closeAllShells();
 
-                    }else{
-                        // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
-                        CommandCapture command1 = new CommandCapture(0, "mkdir " + siondata);
-                        RootTools.getShell(true).add(command1);
-                        while (!command1.isFinished()) {
-                            Thread.sleep(1);
-                        }
-
-                        // ELSE NOT A .ZIP THEN COPY FILE TO SIONDATA
-                        CommandCapture command5 = new CommandCapture(0, "cp -f " + SZP + " " + siondata + "/");
-                        RootTools.getShell(true).add(command5);
-                        while (!command5.isFinished()) {
-                            Thread.sleep(1);
-                        }
-
-                        // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
-                        CommandCapture command6 = new CommandCapture(0, "chmod -R 666 " + siondata + "/");
-                        RootTools.getShell(true).add(command6);
-                        while (!command6.isFinished()) {
-                            Thread.sleep(1);
-                        }
-
-                        RootTools.remount("/system", "RW");
-
-                        // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
-                        CommandCapture command7 = new CommandCapture(0, "mkdir /vendor/overlay");
-                        RootTools.getShell(true).add(command7);
-                        while (!command7.isFinished()) {
-                            Thread.sleep(1);
-                        }
-
-                        // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
-                        CommandCapture command8 = new CommandCapture(0, "chmod -R 777 /vendor/overlay");
-                        RootTools.getShell(true).add(command8);
-                        while (!command8.isFinished()) {
-                            Thread.sleep(1);
-                        }
-
-                        // COPY NEW FILES TO /VENDOR/OVERLAY FOLDER
-                        RootCommands.moveCopyRoot(siondata + "/", overlaypath);
-
-                        // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
-                        CommandCapture command9 = new CommandCapture(0, "chmod -R 666 /vendor/overlay");
-                        RootTools.getShell(true).add(command9);
-                        while (!command9.isFinished()) {
-                            Thread.sleep(1);
-                        }
-
-                        // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER BACK TO 777
-                        CommandCapture command10 = new CommandCapture(0, "chmod 777 /vendor/overlay");
-                        RootTools.getShell(true).add(command10);
-                        while (!command10.isFinished()) {
-                            Thread.sleep(1);
-                            RootTools.remount("/system", "RO");
-                        }
+                    }catch(IOException e){
+                        e.printStackTrace();
+                    }catch(RootDeniedException e){
+                        e.printStackTrace();
+                    }catch(TimeoutException e){
+                        e.printStackTrace();
+                    }catch(InterruptedException e){
+                        e.printStackTrace();
+                    }finally{
+                        finish();
                     }
-                    // CLOSE ALL SHELLS
-                    RootTools.closeAllShells();
 
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (RootDeniedException e) {
-                    e.printStackTrace();
-                } catch (TimeoutException e) {
-                    e.printStackTrace();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    finish();
                 }
 
             }
-
         }
-    }
+
 
     /*************************************************************************************************************
      *                                      UNZIP UTIL
@@ -278,6 +282,23 @@ public class WaitLayers extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+
+    public static boolean deleteFile(File dir) {
+        if (dir != null) {
+            if (dir.isDirectory()) {
+                String[] children = dir.list();
+                for (int i = 0; i < children.length; i++) {
+                    boolean success = deleteFile(new File(dir, children[i]));
+                    if (!success) {
+                        return false;
+                    }
+                }
+            }
+            return dir.delete();
+        }
+        return false;
     }
 
     private void LoadPrefs() {

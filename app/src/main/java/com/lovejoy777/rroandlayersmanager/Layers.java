@@ -26,6 +26,8 @@ public class Layers extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LoadPrefs();
+        String siondata = getApplicationInfo().dataDir + "/overlay";
+        String siondatainstalled = getApplicationInfo().dataDir + "/installed";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layers);
         Button buttonlayerschooser = (Button) findViewById(R.id.buttonlayerschooser);
@@ -38,7 +40,7 @@ public class Layers extends Activity {
         Button deletelayerschooserbutton = (Button) findViewById(R.id.deletelayerschooserbutton);
 
         Intent extras = getIntent();
-        // gets the string of source path for text veiw
+        // gets the string of source path for text view
         String sourcezippath = null;
         if (extras != null) {
             sourcezippath = extras.getStringExtra("key1");
@@ -160,16 +162,18 @@ public class Layers extends Activity {
 
     // COMMAND 5 DELETE CHOSEN FILE
     public void command5() {
+        String siondata = getApplicationInfo().dataDir + "/overlay";
+        String siondatainstalled = getApplicationInfo().dataDir + "/installed";
 
-        String delall = "/vendor/overlay/";
+        String delall = "" + siondatainstalled;
         CheckBox deletecb = (CheckBox) findViewById(R.id.deletecb);
 
         if (deletecb.isChecked()) {
-            RootTools.remount("/system", "RW");
+           // RootTools.remount("/system", "RW");
             RootTools.deleteFileOrDirectory(delall, true);
             Toast.makeText(Layers.this, "Delete Successful", Toast.LENGTH_LONG).show();
 
-            RootTools.remount("/system", "RO");
+          //  RootTools.remount("/system", "RO");
         } else {
             Toast.makeText(Layers.this, "Confirm with checkbox", Toast.LENGTH_LONG).show();
         }
