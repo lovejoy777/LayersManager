@@ -18,7 +18,7 @@
     <string name="layersbutton4txt">Installed Layers</string>
     <string name="layersbutton5txt">Delete selected</string>
     <string name="layersbutton6txt">Delete All</string>
-    <string name="deletelayersTitle">Delete layer</string>
+    <string name="deletelayersTitle">Manage layers</string>
     <string name="layersconfirmdel">  Tick to activate Delete buttons</string>
 
     <!-- Loading Screen -->
@@ -45,8 +45,35 @@
     <!-- INSTRUCTIONS -->
     <string name="instructionsTV1">Select what type of file you are installing from the Home screen.</string>
     <string name="instructionsTV6">Layers Installer</string>
-    <string name="instructionsTV7">If you select Layers installer and click the Choose your Layers.zip button then Navigate to your chosen Layers.zip and click it. The file path will be displayed Please check it and press the Install Chosen Layer button, Reboot for the Layers to take effect.</string>
-
+    <string name="instructionsTV7">
+    Installing Layers:\n
+    ******************\n
+    1/ click on Button 1 on the home screen \"Layers Installer\".\n
+    2/ click Button 1 on Install Layers screen \"Choose Your Layers.zip that you predownloaded\".\n
+    3/ navigate to your predownloaded layers.zip or individual .apk file that you want to install and click it.\n
+    4/ click Button 2 "Install Chosen Layer".\n
+    (you can then check whats installed by clicking Button 4 \"Installed Layers\").\n
+    5/ delete what you don\'t want before clicking Button 3 \"Reboot Your Device\"\, for the layers to take effect.\n
+    \n
+    Deleting 1 layer at a time:\n
+    ***************************\n
+    1/ click Button 4 \"installed Layers\".\n
+    2/ Pick a layer.apk to delete.\n
+    3/ check the checkbox then click bottom left button \"Delete Your Chosen Layer\".\n
+    (you can then click button 4 again to check it was deleted).\n
+    \n
+    Deleting everything in the Installed folder:\n
+    ********************************************\n
+    1/ check the checkbox.\n
+    2/ click the bottom right button \"Delete all Installed Layers\".\n
+    (click button 4 again to check they have all gone).\n
+    \n
+    TIPS:\n
+    *****\n
+    1/ you can package any number of layers.apk\'s into a folder of your choice then zip the whole folder and install it in one go or just pick the .apk\'s 1x1.\n
+    2/ use the \"Installed Layers\" Button to check whats currently installed.\n
+    3/ you also need to reboot after deleting to remove them from your system.\n
+    </string>
 
     <!-- Settings Screen -->
     <string name="settingsTitle">Settings</string>

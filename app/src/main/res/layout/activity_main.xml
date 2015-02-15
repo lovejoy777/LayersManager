@@ -20,7 +20,7 @@
             android:id="@+id/textView9"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/main"
+            android:textColor="@color/titles"
             android:textSize="@dimen/title_text_size" />
 
         <!-- HOME IMAGE -->

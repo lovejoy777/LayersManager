@@ -15,7 +15,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:text="Layers Manager"
-        android:textColor="@color/main"
+        android:textColor="@color/titles"
         android:textSize="30sp"
         android:id="@+id/textView1"
         android:layout_weight="1" />
@@ -51,7 +51,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         android:text="@string/credits"
-        android:textColor="@color/main"
+        android:textColor="@color/titles"
         android:textSize="30sp"
         android:id="@+id/textView6"
         android:layout_weight="1" />

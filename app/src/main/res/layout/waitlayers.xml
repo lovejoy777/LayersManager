@@ -11,7 +11,7 @@
         android:text="Loading"
         android:id="@+id/textView12"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/main"
+        android:textColor="@color/titles"
         android:textSize="30sp"
         android:layout_marginTop="20dp" />
 
@@ -45,15 +45,6 @@
         android:text="@string/loadingdescript11"
         android:id="@+id/textView7"
         android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Please be patient"
-        android:id="@+id/textView13"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
