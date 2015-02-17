@@ -88,6 +88,8 @@
     <string name="aboutversion">Version #</string>
     <string name="credits">Layers</string>
     <string name="creditlayers">Layers has been developed by the BitSyko Team.</string>
+    <string name="xdalink">BitSyko xda</string>
+    <string name="gpluslink">BitSyko G+</string>
 
     <!-- Changelog -->
 
