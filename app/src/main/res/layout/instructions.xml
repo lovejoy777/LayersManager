@@ -3,10 +3,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -16,54 +17,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/instructionsTV6"
-        android:textColor="@color/main"
-        android:textSize="30sp"
-        android:id="@+id/textView6" />
+        android:textColor="@color/titles"
+        android:textSize="35sp"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/instructionsTV7"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:id="@+id/textView7" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:textColor="@color/main"
-        android:textSize="30sp"
-        android:id="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:textSize="20sp"
-        android:id="@+id/textView3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:textColor="@color/main"
-        android:textSize="30sp"
-        android:id="@+id/textView4" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text=""
-        android:textSize="20sp"
-        android:id="@+id/textView5" />
-
 
 </LinearLayout>
     </ScrollView>

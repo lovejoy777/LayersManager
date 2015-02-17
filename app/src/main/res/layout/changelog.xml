@@ -10,7 +10,8 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:weightSum="1">
 
     <!-- TITLE TEXT -->
     <TextView
@@ -18,29 +19,38 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/changelog1"
+        android:text="@string/changelogtitle"
         android:id="@+id/textView9"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/main"
-        android:textSize="@dimen/title_text_size" />
+        android:textColor="@color/titles"
+        android:textSize="@dimen/title_text_size"
+        android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:textSize="20sp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/changelog"
-            android:textSize="20sp"
-
-            android:id="@+id/textView"
+            android:textSize="15sp"
+            android:id="@+id/textView10"
             android:layout_gravity="center_horizontal" />
 
+
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
+        android:elevation="22sp"
         android:id="@+id/xdaButton1"
-        android:src="@drawable/xdaicon"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/xda"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.17" />
 
 
 
