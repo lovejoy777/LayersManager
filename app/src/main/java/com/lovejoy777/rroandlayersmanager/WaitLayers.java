@@ -66,6 +66,8 @@ public class WaitLayers extends Activity {
             String siondata = getApplicationInfo().dataDir + "/overlay";
             String overlaypath = "/vendor";
             String iszip = ".zip";
+            String israr = ".rar";
+            String isapk = ".apk";
 
 
             //IF SOURCE ZIP NAME LENGTH IS LESS THAN 1 CHAR DO THIS.
@@ -129,8 +131,11 @@ public class WaitLayers extends Activity {
 
                             finish();
                         }
+                    }
 
-                    }else{
+
+
+                        if (SZN.endsWith(isapk)) {
                         // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
                         CommandCapture command1 = new CommandCapture(0, "mkdir " + siondata);
                         RootTools.getShell(true).add(command1);
@@ -185,7 +190,9 @@ public class WaitLayers extends Activity {
                             Thread.sleep(1);
                             RootTools.remount("/system", "RO");
                         }
-                    }
+                    }else{
+                            Toast.makeText(WaitLayers.this, "Invalid file", Toast.LENGTH_LONG).show();
+                        }
                     // CLOSE ALL SHELLS
                     RootTools.closeAllShells();
 
