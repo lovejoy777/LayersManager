@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Layers Manager</string>
-    <string name="version">version 0.01</string>
+    <string name="version">Version 0.05</string>
 
     <!-- Home Screen -->
     <string name="homeTitle">Home</string>
@@ -48,31 +48,31 @@
     <string name="instructionsTV7">
     Installing Layers:\n
     ******************\n
-    1/ click on Button 1 on the home screen \"Layers Installer\".\n
-    2/ click Button 1 on Install Layers screen \"Choose Your Layers.zip that you predownloaded\".\n
-    3/ navigate to your predownloaded layers.zip or individual .apk file that you want to install and click it.\n
-    4/ click Button 2 "Install Chosen Layer".\n
-    (you can then check whats installed by clicking Button 4 \"Installed Layers\").\n
-    5/ delete what you don\'t want before clicking Button 3 \"Reboot Your Device\"\, for the layers to take effect.\n
+    • Click on Button 1 on the home screen \"Layers Installer\".\n
+    • Click Button 1 on Install Layers screen \"Choose Your Layers.zip that you predownloaded\".\n
+    • Navigate to your predownloaded layers.zip or individual .apk file that you want to install and click it.\n
+    • Click Button 2 "Install Chosen Layer".\n
+    (you can then check whats installed by clicking Button \"Installed Layers\").\n
+    • Delete what you don\'t want before clicking Button 3 \"Reboot Your Device\"\, for the layers to take effect.\n
     \n
     Deleting 1 layer at a time:\n
     ***************************\n
-    1/ click Button 4 \"installed Layers\".\n
-    2/ Pick a layer.apk to delete.\n
-    3/ check the checkbox then click bottom left button \"Delete Your Chosen Layer\".\n
+    • Click Button 4 \"installed Layers\".\n
+    • Pick a layer.apk to delete.\n
+    • Check the checkbox then click bottom left button \"Delete Your Chosen Layer\".\n
     (you can then click button 4 again to check it was deleted).\n
     \n
     Deleting everything in the Installed folder:\n
     ********************************************\n
-    1/ check the checkbox.\n
-    2/ click the bottom right button \"Delete all Installed Layers\".\n
+    • Check the checkbox.\n
+    • Click the bottom right button \"Delete all Installed Layers\".\n
     (click button 4 again to check they have all gone).\n
     \n
     TIPS:\n
     *****\n
-    1/ you can package any number of layers.apk\'s into a folder of your choice then zip the whole folder and install it in one go or just pick the .apk\'s 1x1.\n
-    2/ use the \"Installed Layers\" Button to check whats currently installed.\n
-    3/ you also need to reboot after deleting to remove them from your system.\n
+    • You can package any number of layers.apk\'s into a folder of your choice then zip the whole folder and install it in one go or just pick the .apk\'s 1x1.\n
+    • Use the \"Installed Layers\" Button to check whats currently installed.\n
+    • You also need to reboot after deleting to remove them from your system.\n
     </string>
 
     <!-- Settings Screen -->
@@ -80,24 +80,24 @@
     <string name="savecb">checkbox then press the save icon and restart the app</string>
     <string name="ticktoapply">Tick to apply Dark Theme</string>
     <string name="ifyouwantdark">If you want to have a dark ui then tick the</string>
-    <string name="xdaText">Visit the Layers xda thread.</string>
+    <string name="xdaText">Visit the Layers XDA thread.</string>
 
     <!-- About -->
     <string name="aboutTV2">Developed by BitSyko Team </string>
-    <string name="aboutTV3">This is an app for installing Layers onto an android device,\nIts main aim is to be a user friendly way of doing this with the minimal chance of messing up your system etc. </string>
+    <string name="aboutTV3">An easy way to manage your favourite layers. </string>
     <string name="aboutversion">Version #</string>
     <string name="credits">Layers</string>
-    <string name="creditlayers">Layers has been developed by the BitSyko Team (please see Links below).</string>
+    <string name="creditlayers">Layers has been developed by the BitSyko Team.</string>
 
     <!-- Changelog -->
 
-    <string name="changelog1">Changelog</string>
-    <string name="changelog">
-    \nVersion 0.01
-    \n
-    \nPlease visit the Layers XDA thread.
-
-    </string>
+    <string name="changelogtitle">Changelog</string>
+    <string name="changelog">\n
+     • Replaced instructions text with an icon. \n
+     • Added layers image inside layers installer. \n
+     • Bye icons, Hello vectors. \n
+     • Aligned and resized texts. \n
+     • Fixed file view padding.</string>
 
     <!-- theme -->
     <string name="theme">Theme</string>

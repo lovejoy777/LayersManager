@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/yourpathhint"
             android:id="@+id/tvlayerspath"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_centerHorizontal="true"
@@ -139,6 +139,7 @@
             android:layout_height="wrap_content"
             android:text="@string/layersconfirmdel"
             android:id="@+id/deletecb"
+            android:layout_marginLeft="10dp"
             android:layout_alignLeft="@+id/deletebutton"
             android:layout_alignStart="@+id/deletebutton"
             android:layout_alignParentEnd="true"
@@ -147,7 +148,7 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/layersbutton5txt"
             android:id="@+id/deletebutton"
             android:layout_marginLeft="10dp"
@@ -160,7 +161,7 @@
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/layersbutton6txt"
             android:id="@+id/deleteallbutton"
             android:layout_marginLeft="10dp"
