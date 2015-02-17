@@ -133,8 +133,6 @@ public class WaitLayers extends Activity {
                         }
                     }
 
-
-
                         if (SZN.endsWith(isapk)) {
                         // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
                         CommandCapture command1 = new CommandCapture(0, "mkdir " + siondata);
