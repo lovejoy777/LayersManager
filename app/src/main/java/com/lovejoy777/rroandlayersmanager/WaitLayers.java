@@ -66,7 +66,6 @@ public class WaitLayers extends Activity {
             String siondata = getApplicationInfo().dataDir + "/overlay";
             String overlaypath = "/vendor";
             String iszip = ".zip";
-            String israr = ".rar";
             String isapk = ".apk";
 
 
