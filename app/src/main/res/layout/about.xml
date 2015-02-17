@@ -81,11 +81,13 @@
         android:layout_gravity="center_horizontal" />
 
     <ImageButton
-        android:layout_width="58dp"
+        android:layout_width="101dp"
         android:layout_height="wrap_content"
+        android:elevation="22sp"
         android:id="@+id/layersButton"
         android:src="@drawable/xda"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.91" />
 
     <TextView
         android:layout_width="394dp"
@@ -97,10 +99,11 @@
         android:gravity="center_horizontal" />
 
     <ImageButton
-        android:layout_width="60dp"
-        android:layout_height="match_parent"
+        android:layout_width="105dp"
+        android:elevation="22sp"
+        android:layout_height="wrap_content"
         android:id="@+id/layersButton1"
-        android:src="@drawable/xda"
+        android:src="@drawable/bitsyko_g_plus"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

@@ -42,6 +42,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="60dp"
+            android:elevation="22sp"
             android:id="@+id/buttonlayers"
             style="@style/Button"
             android:text="@string/homebutton1txt"
@@ -60,6 +61,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="60dp"
+            android:elevation="22sp"
             android:id="@+id/buttondllayers"
             style="@style/Button"
             android:text="@string/homebutton2txt"
@@ -70,7 +72,8 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/black" />
 
         <!-- LAYERS DOWNLOAD IMAGE -->
 
