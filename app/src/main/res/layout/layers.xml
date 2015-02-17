@@ -2,18 +2,24 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical">
 
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/layersTitle"
             android:id="@+id/textView9"
@@ -27,147 +33,147 @@
             android:layout_alignParentStart="false"
             android:layout_alignParentBottom="false"
             android:layout_alignParentRight="false"
-            android:layout_alignWithParentIfMissing="false" />
+            android:layout_alignWithParentIfMissing="false"
+            android:gravity="center_horizontal" />
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
             android:id="@+id/imageView3"
-            android:src="@drawable/ic_bitsyko_layers"
+            android:src="@drawable/layers_header"
             android:contentDescription="@string/imageReference"
             android:baselineAlignBottom="false"
-            android:layout_below="@+id/textView9"
-            android:maxWidth="@android:dimen/app_icon_size"
-            android:minHeight="@android:dimen/app_icon_size"
-            android:layout_alignStart="@+id/textView9"
-            android:layout_alignEnd="@+id/textView9"
-            android:layout_alignParentEnd="true"
+            android:nestedScrollingEnabled="true"
             android:layout_alignParentStart="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/layersinstallbutton"
+            android:layout_alignParentTop="true" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/yourpathhint"
             android:id="@+id/tvlayerspath"
             android:textSize="25sp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_below="@+id/imageView3"
             android:layout_centerHorizontal="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="false"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/buttonlayerschooser"
+            android:textColor="@color/whitesmoke" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/layersbutton1txt"
             android:id="@+id/buttonlayerschooser"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/tvlayerspath"
-            android:layout_margin="10dp"
+            android:layout_alignParentEnd="false"
             style="@style/Button"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/layersinstallbutton" />
 
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/layersbutton2txt"
             android:id="@+id/layersinstallbutton"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/buttonlayerschooser"
-            android:layout_margin="10dp"
+            android:layout_alignParentEnd="false"
             style="@style/Button"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/rebootbutton" />
 
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/layersbutton3txt"
             android:id="@+id/rebootbutton"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/layersinstallbutton"
-            android:layout_margin="10dp"
+            android:layout_alignParentEnd="false"
             style="@style/Button"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/textView21" />
 
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:text="@string/deletelayersTitle"
             android:id="@+id/textView21"
             android:textColor="@color/titles"
             android:textSize="@dimen/title_text_size"
-            android:layout_below="@+id/rebootbutton"
             android:layout_alignParentEnd="true"
             android:layout_alignStart="@+id/textView9"
             android:layout_alignParentStart="true"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/deletelayerschooserbutton" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="@string/layersbutton4txt"
             android:id="@+id/deletelayerschooserbutton"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_below="@+id/textView21"
-            android:layout_margin="10dp"
+            android:layout_alignParentEnd="false"
             style="@style/Button"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/deletecb" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/layersconfirmdel"
             android:id="@+id/deletecb"
-            android:layout_below="@+id/deletelayerschooserbutton"
             android:layout_alignLeft="@+id/deletebutton"
             android:layout_alignStart="@+id/deletebutton"
-            android:layout_alignEnd="@+id/textView9" />
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/deletebutton" />
 
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/layersbutton5txt"
             android:id="@+id/deletebutton"
-            android:layout_centerVertical="true"
-            android:layout_below="@+id/deletecb"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             style="@style/Button"
-            android:layout_alignStart="@+id/textView9"
-            android:layout_alignParentLeft="true" />
+            android:layout_above="@+id/deleteallbutton"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/deletelayerschooserbutton"
+            android:layout_alignParentEnd="false"
+            android:layout_marginRight="10dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/layersbutton6txt"
             android:id="@+id/deleteallbutton"
             android:layout_marginLeft="10dp"
             style="@style/Button"
-            android:layout_alignTop="@+id/deletebutton"
-            android:layout_alignEnd="@+id/deletelayerschooserbutton"
-            android:layout_alignBottom="@+id/deletebutton"
-            android:layout_alignParentRight="false"
-            android:layout_toEndOf="@+id/deletebutton" />
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/deletebutton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_marginRight="10dp" />
+
+       </LinearLayout>
 
 
-    </RelativeLayout>
+
 
 </ScrollView>
