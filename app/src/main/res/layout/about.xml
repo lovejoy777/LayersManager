@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="BitSyko XDA Thread"
+        android:text="@string/xdalink"
         android:id="@+id/textView8"
         android:layout_gravity="center_horizontal" />
 
@@ -90,7 +90,7 @@
     <TextView
         android:layout_width="394dp"
         android:layout_height="wrap_content"
-        android:text="Layers Collection"
+        android:text="@string/gpluslink"
         android:layout_marginTop="10dp"
         android:id="@+id/textView9"
         android:layout_gravity="center_horizontal"

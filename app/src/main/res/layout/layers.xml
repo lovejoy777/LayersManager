@@ -6,35 +6,12 @@
     android:fillViewport="true"
     android:scrollbars = "vertical">
 
-
-
-
-
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/layersTitle"
-            android:id="@+id/textView9"
-            android:textColor="@color/titles"
-            android:textSize="@dimen/title_text_size"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentEnd="false"
-            android:layout_alignParentStart="false"
-            android:layout_alignParentBottom="false"
-            android:layout_alignParentRight="false"
-            android:layout_alignWithParentIfMissing="false"
-            android:gravity="center_horizontal" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -109,7 +86,7 @@
 
 
         <TextView
-            android:layout_width="409dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/deletelayersTitle"
             android:id="@+id/textView21"
@@ -173,8 +150,5 @@
             android:layout_marginRight="10dp" />
 
        </LinearLayout>
-
-
-
 
 </ScrollView>

@@ -39,7 +39,7 @@ public class About extends Activity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/themes/0-themes-official-mega-rro-themes-t3011075")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/communities/102261717366580091389")));
 
 
             }
