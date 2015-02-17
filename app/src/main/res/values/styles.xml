@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material">
+    <style name="AppTheme" parent="android:Theme.Material.Light">
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
         <item name="android:colorPrimary">#ff017fb3</item>
@@ -27,7 +27,7 @@
 
     </style>
 
-    <style name="LightTheme" parent="android:Theme.Material">
+    <style name="LightTheme" parent="android:Theme.Material.Light">
         <item name="android:buttonStyle">@style/ButtonLight</item>
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
