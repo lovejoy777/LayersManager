@@ -34,7 +34,7 @@ public class Settings extends Activity implements View.OnClickListener {
         b = (ImageButton) findViewById(R.id.saveButton);
         b.setOnClickListener(this);
 
-        ImageButton xdaButton = (ImageButton) findViewById(R.id.xdaButton);
+        ImageButton xdaButton = (ImageButton) findViewById(R.id.xda);
 
         xdaButton.setOnClickListener(new View.OnClickListener() {
 

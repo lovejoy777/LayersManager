@@ -29,6 +29,7 @@ public class menu extends Activity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
+
             Button buttonlayers = (Button) findViewById(R.id.buttonlayers);
             Button buttondllayers = (Button) findViewById(R.id.buttondllayers);
 

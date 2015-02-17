@@ -39,7 +39,8 @@
         <activity
             android:name=".Layers"
             android:label="@string/app_name"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu" >
             <intent-filter>
                 <action android:name="com.lovejoy777.rroandlayersmanager.LAYERS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -49,7 +50,8 @@
         <activity
             android:name=".LayersChooser"
             android:label="@string/app_name"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.Layers">
             <intent-filter>
                 <action android:name="com.lovejoy777.rroandlayersmanager.LAYERSCHOOSER" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -59,7 +61,8 @@
         <activity
             android:name="com.lovejoy777.rroandlayersmanager.DeleteLayersChooser"
             android:label="@string/app_name"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.Layers">
             <intent-filter>
                 <action android:name="com.lovejoy777.rroandlayersmanager.DELETELAYERSCHOOSER" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -90,7 +93,8 @@
         <activity
             android:name="com.lovejoy777.rroandlayersmanager.Instructions"
             android:label="Instructions"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu">
             <intent-filter>
                 <action android:name="android.intent.action.INSTRUCTIONS" />
 
@@ -101,7 +105,8 @@
         <activity
             android:name="com.lovejoy777.rroandlayersmanager.About"
             android:label="About"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu">
             <intent-filter>
                 <action android:name="android.intent.action.ABOUT" />
 
@@ -112,7 +117,8 @@
         <activity
             android:name="com.lovejoy777.rroandlayersmanager.ChangeLog"
             android:label="ChangeLog"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu">
             <intent-filter>
                 <action android:name="android.intent.action.CHANGELOG" />
 

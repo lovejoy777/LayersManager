@@ -21,7 +21,9 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:textColor="@color/titles"
-            android:textSize="@dimen/title_text_size" />
+            android:textSize="@dimen/title_text_size"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
 
         <!-- HOME IMAGE -->
         <ImageView
@@ -32,7 +34,9 @@
             android:layout_margin="20dp"
             android:layout_below="@+id/textView9"
             android:layout_centerHorizontal="true"
-            android:contentDescription="@string/imageReference" />
+            android:contentDescription="@string/imageReference"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false" />
 
         <!-- LAYERS INSTALLER BUTTON -->
         <Button
@@ -41,28 +45,16 @@
             android:id="@+id/buttonlayers"
             style="@style/Button"
             android:text="@string/homebutton1txt"
-            android:layout_margin="10dp"
             android:layout_below="@+id/imageView5"
-            android:layout_toEndOf="@+id/imageView6"
-            android:layout_toRightOf="@+id/imageView6"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentEnd="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true" />
 
         <!-- LAYERS INSTALLER IMAGE -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView6"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/layers"
-            android:layout_alignTop="@+id/buttonlayers"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:contentDescription="@string/imageReference" />
 
         <!-- LAYERS DOWNLOAD BUTTON -->
         <Button
@@ -71,29 +63,16 @@
             android:id="@+id/buttondllayers"
             style="@style/Button"
             android:text="@string/homebutton2txt"
-            android:layout_margin="10dp"
             android:layout_below="@+id/buttonlayers"
-            android:layout_toEndOf="@+id/imageView7"
-            android:layout_toRightOf="@+id/imageView7"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentEnd="false"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true" />
 
         <!-- LAYERS DOWNLOAD IMAGE -->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView7"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/layers"
-            android:layout_alignTop="@+id/buttondllayers"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:contentDescription="@string/imageReference" />
-
 
 
     </RelativeLayout>

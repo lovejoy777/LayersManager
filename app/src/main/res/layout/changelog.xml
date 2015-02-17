@@ -10,7 +10,8 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:weightSum="1">
 
     <!-- TITLE TEXT -->
     <TextView
@@ -33,12 +34,13 @@
             android:layout_gravity="center_horizontal" />
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="69dp"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:id="@+id/xdaButton1"
-        android:src="@drawable/xdaicon"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/xda"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.19" />
 
 
 

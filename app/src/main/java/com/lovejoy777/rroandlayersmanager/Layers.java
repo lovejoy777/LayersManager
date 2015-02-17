@@ -36,7 +36,7 @@ public class Layers extends Activity {
         Button deleteallbutton = (Button) findViewById(R.id.deleteallbutton);
         Button rebootbutton = (Button) findViewById(R.id.rebootbutton);
         Button deletelayerschooserbutton = (Button) findViewById(R.id.deletelayerschooserbutton);
-
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent extras = getIntent();
         // gets the string of source path for text veiw
         String sourcezippath = null;

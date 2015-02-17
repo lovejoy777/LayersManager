@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,13 +17,14 @@
         android:layout_marginTop="20dp" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="35dp"
         android:layout_height="wrap_content"
         android:id="@+id/waitimage"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/content"
-        android:src="@drawable/wait" />
+        android:src="@drawable/waiting"
+        android:layout_weight="0.03" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -3,10 +3,10 @@
     <!--BT SWITCH CUSTOM COLORS
     -->
 
-    <color name="main">#673AB7</color>
-    <color name="titles">#673AB7</color>
+    <color name="main">#ff096e97</color>
+    <color name="titles">#ff096e97</color>
     <color name="choosertext1">#ffffffff</color>
-    <color name="choosertext2">#673AB7</color>
+    <color name="choosertext2">#ffaaaaaa</color>
 
 
     <color name="test">#FFFFFF</color>

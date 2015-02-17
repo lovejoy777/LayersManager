@@ -11,12 +11,14 @@
     <item
         android:id="@+id/action_instructions"
         android:title="@string/action_instructions"
+        android:icon="@drawable/info"
         android:orderInCategory="1"
-        android:showAsAction="ifRoom" />
+        android:showAsAction="ifRoom|withText" />
 
     <item
         android:id="@+id/action_about"
         android:title="@string/action_about"
+        android:icon="@drawable/info"
         android:orderInCategory="2"
         android:showAsAction="never" />
 

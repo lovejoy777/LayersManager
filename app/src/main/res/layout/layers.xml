@@ -15,40 +15,50 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:text="@string/layersTitle"
             android:id="@+id/textView9"
-            android:layout_centerHorizontal="true"
             android:textColor="@color/titles"
-            android:textSize="@dimen/title_text_size" />
+            android:textSize="@dimen/title_text_size"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:id="@+id/imageView3"
+            android:src="@drawable/ic_bitsyko_layers"
+            android:contentDescription="@string/imageReference"
+            android:baselineAlignBottom="false"
             android:layout_below="@+id/textView9"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/layers"
-            android:contentDescription="@string/imageReference" />
+            android:maxWidth="@android:dimen/app_icon_size"
+            android:minHeight="@android:dimen/app_icon_size"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_alignEnd="@+id/textView9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:hint="@string/yourpathhint"
             android:id="@+id/tvlayerspath"
             android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_below="@+id/imageView3"
-            android:layout_centerHorizontal="true" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView10"
-            android:src="@drawable/layers"
-            android:layout_alignTop="@+id/buttonlayerschooser"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/imageReference" />
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:gravity="center_horizontal" />
 
         <Button
             android:layout_width="wrap_content"
@@ -58,19 +68,10 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/imageView10"
             android:layout_below="@+id/tvlayerspath"
             android:layout_margin="10dp"
-            style="@style/Button" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView11"
-            android:src="@drawable/ic_redflash"
-            android:layout_alignTop="@+id/layersinstallbutton"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/imageReference" />
+            style="@style/Button"
+            android:layout_alignParentStart="true" />
 
 
         <Button
@@ -81,22 +82,10 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/imageView10"
-            android:layout_toEndOf="@+id/imageView10"
             android:layout_below="@+id/buttonlayerschooser"
             android:layout_margin="10dp"
-            style="@style/Button" />
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:id="@+id/imageView12"
-            android:src="@drawable/ic_reload"
-            android:layout_alignTop="@+id/rebootbutton"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/imageReference" />
-
+            style="@style/Button"
+            android:layout_alignParentStart="true" />
 
 
         <Button
@@ -107,11 +96,10 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/imageView10"
-            android:layout_toEndOf="@+id/imageView10"
             android:layout_below="@+id/layersinstallbutton"
             android:layout_margin="10dp"
-            style="@style/Button" />
+            style="@style/Button"
+            android:layout_alignParentStart="true" />
 
 
 
@@ -123,16 +111,10 @@
             android:textColor="@color/titles"
             android:textSize="@dimen/title_text_size"
             android:layout_below="@+id/rebootbutton"
-            android:layout_centerHorizontal="true" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView13"
-            android:src="@drawable/layers"
-            android:layout_alignTop="@+id/deletelayerschooserbutton"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/imageReference" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal" />
 
         <Button
             android:layout_width="wrap_content"
@@ -142,11 +124,10 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/imageView10"
-            android:layout_toEndOf="@+id/imageView10"
             android:layout_below="@+id/textView21"
             android:layout_margin="10dp"
-            style="@style/Button" />
+            style="@style/Button"
+            android:layout_alignParentStart="true" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -154,19 +135,9 @@
             android:text="@string/layersconfirmdel"
             android:id="@+id/deletecb"
             android:layout_below="@+id/deletelayerschooserbutton"
-            android:layout_alignRight="@+id/deleteallbutton"
-            android:layout_alignEnd="@+id/deleteallbutton"
             android:layout_alignLeft="@+id/deletebutton"
-            android:layout_alignStart="@+id/deletebutton" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView14"
-            android:src="@drawable/ic_trash"
-            android:layout_alignTop="@+id/deletebutton"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/imageReference" />
+            android:layout_alignStart="@+id/deletebutton"
+            android:layout_alignEnd="@+id/textView9" />
 
 
         <Button
@@ -175,14 +146,13 @@
             android:text="@string/layersbutton5txt"
             android:id="@+id/deletebutton"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/imageView10"
             android:layout_below="@+id/deletecb"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_alignRight="@+id/imageView3"
-            android:layout_alignEnd="@+id/imageView3"
-            style="@style/Button" />
+            style="@style/Button"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_alignParentLeft="true" />
 
         <Button
             android:layout_width="wrap_content"
@@ -190,13 +160,12 @@
             android:text="@string/layersbutton6txt"
             android:id="@+id/deleteallbutton"
             android:layout_marginLeft="10dp"
-            android:layout_alignRight="@+id/deletelayerschooserbutton"
-            android:layout_alignEnd="@+id/deletelayerschooserbutton"
+            style="@style/Button"
             android:layout_alignTop="@+id/deletebutton"
+            android:layout_alignEnd="@+id/deletelayerschooserbutton"
             android:layout_alignBottom="@+id/deletebutton"
-            android:layout_toRightOf="@+id/deletebutton"
-            android:layout_toEndOf="@+id/deletebutton"
-            style="@style/Button" />
+            android:layout_alignParentRight="false"
+            android:layout_toEndOf="@+id/deletebutton" />
 
 
     </RelativeLayout>
