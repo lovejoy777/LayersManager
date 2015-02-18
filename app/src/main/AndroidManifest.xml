@@ -82,7 +82,8 @@
         <activity
             android:name="com.lovejoy777.rroandlayersmanager.Settings"
             android:label="Settings"
-            android:icon="@drawable/layers" >
+            android:icon="@drawable/layers"
+            android:parentActivityName="com.lovejoy777.rroandlayersmanager.Layers">
             <intent-filter>
                 <action android:name="android.intent.action.SETTINGS" />
 

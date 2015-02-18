@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="android:Theme.Material.Light">
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
+
         <item name="android:colorPrimary">#ff017fb3</item>
         <!--   darker variant for the status bar and contextual app bars -->
         <item name="android:colorPrimaryDark">#ff096e97</item>
@@ -15,7 +16,6 @@
 
     <style name="DarkTheme" parent="android:Theme.Material">
         <!-- Customize your theme here. -->
-        <item name="android:buttonStyle">@style/ButtonDark</item>
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
         <item name="android:colorPrimary">#ff017fb3</item>
@@ -27,8 +27,8 @@
 
     </style>
 
-    <style name="LightTheme" parent="android:Theme.Material.Light">
-        <item name="android:buttonStyle">@style/ButtonLight</item>
+    <style name="LightTheme" parent="android:Theme.Material.Light.DarkActionBar">
+
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
         <item name="android:colorPrimary">#ff017fb3</item>
@@ -43,7 +43,7 @@
     <style name="ButtonDark" parent="@android:style/Widget.Material.Button">
         <!-- <item name="android:textColor">#ffffff</item> only way to change this is to change the src image
          <item name="android:background">#1D1D1D</item>-->
-        <item name="android:background">@drawable/button_appirator</item>
+
         <item name="android:textColor">#000</item>
 
     </style>
@@ -53,6 +53,7 @@
         <item name="android:background">@color/main</item>-->
 
         <item name="android:textColor">#000</item>
+
 
     </style>
 

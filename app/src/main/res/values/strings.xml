@@ -8,6 +8,7 @@
     <string name="homeTitle">Home</string>
     <string name="homebutton1txt">Layers Installer</string>
     <string name="homebutton2txt">Download Layers</string>
+    <string name="futurehome">Future home for Layers</string>
 
     <!-- layers installer -->
     <string name="yourpathhint">Your path will appear here</string>

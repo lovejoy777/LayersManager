@@ -17,12 +17,14 @@
 
     <ImageView
         android:layout_width="67dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_margin="10dp"
         android:id="@+id/imageView15"
         android:src="@drawable/settings"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.15" />
+
+
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -49,15 +51,15 @@
 
 
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
         android:layout_margin="40dp"
-        android:background="#00000000"
+        android:elevation="2sp"
         android:id="@+id/saveButton"
         android:src="@drawable/save"
         android:layout_gravity="center_horizontal"
         android:contentDescription="@string/imageReference"
-        android:layout_weight="0.15" />
+        android:layout_weight="0.08" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,13 +69,15 @@
         android:layout_gravity="center_horizontal" />
 
     <ImageButton
-        android:layout_width="63dp"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
         android:layout_margin="40dp"
+        android:elevation="2sp"
         android:id="@+id/xda"
         android:src="@drawable/xda"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.06" />
+        android:layout_weight="0.10"
+        android:clickable="true" />
 
 
 

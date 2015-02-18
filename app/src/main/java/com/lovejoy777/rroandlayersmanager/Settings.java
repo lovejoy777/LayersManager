@@ -71,7 +71,7 @@ public class Settings extends Activity implements View.OnClickListener {
     public static void updatePreferences(Context context) {
         SharedPreferences p = PreferenceManager.getDefaultSharedPreferences(context);
 
-        mShowHiddenFiles = p.getBoolean("displayhiddenfiles", true);
+        mShowHiddenFiles = p.getBoolean("displayhiddenfiles", false);
         mRootAccess = p.getBoolean("enablerootaccess", true);
         defaultdir = p.getString("defaultdir", Environment
                 .getExternalStorageDirectory().getPath());

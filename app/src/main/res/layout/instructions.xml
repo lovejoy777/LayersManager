@@ -6,7 +6,10 @@
     android:layout_height="fill_parent"
     android:fillViewport="true"
     android:scrollbars = "vertical"
-    android:scrollbarStyle="insideInset">
+    android:scrollbarStyle="insideOverlay"
+    android:padding="24dp"
+    android:textAlignment="center"
+    android:nestedScrollingEnabled="false">
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -27,10 +30,10 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="@string/instructionsTV7"
         android:textSize="15sp"
-        android:id="@+id/textView7" />
+        android:id="@+id/textView7"
+        android:layout_margin="24dp" />
 
 </LinearLayout>
     </ScrollView>
