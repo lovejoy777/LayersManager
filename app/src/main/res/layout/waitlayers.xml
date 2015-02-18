@@ -13,7 +13,7 @@
         android:id="@+id/textView12"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/titles"
-        android:textSize="30sp"
+        android:textSize="@dimen/title_text_size"
         android:layout_marginTop="20dp" />
 
     <ImageView

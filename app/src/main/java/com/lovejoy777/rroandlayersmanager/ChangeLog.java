@@ -19,16 +19,7 @@ public class ChangeLog extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.changelog);
 
-        ImageButton xdaButton = (ImageButton) findViewById(R.id.xdaButton1);
-        xdaButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/official-layers-bitsyko-apps-rro-t3012172")));
-
-
-            }
-        });
     }
 
     private void LoadPrefs() {

@@ -40,43 +40,29 @@
 
         <!-- LAYERS INSTALLER BUTTON -->
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:elevation="22sp"
+            android:elevation="2sp"
             android:id="@+id/buttonlayers"
-            style="@style/Button"
             android:text="@string/homebutton1txt"
             android:layout_below="@+id/imageView5"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="false"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_alignParentStart="true" />
-
-        <!-- LAYERS INSTALLER IMAGE -->
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            style="?android:attr/colorButtonNormal" />
 
         <!-- LAYERS DOWNLOAD BUTTON -->
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:elevation="22sp"
+            android:elevation="2sp"
             android:id="@+id/buttondllayers"
-            style="@style/Button"
             android:text="@string/homebutton2txt"
             android:layout_below="@+id/buttonlayers"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="false"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_alignParentStart="true"
-            android:backgroundTint="@color/black" />
-
-        <!-- LAYERS DOWNLOAD IMAGE -->
-
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            style="?android:attr/colorButtonNormal" />
 
     </RelativeLayout>
 

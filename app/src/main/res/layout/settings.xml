@@ -46,35 +46,16 @@
         android:id="@+id/textView11"
         android:layout_gravity="center_horizontal" />
 
+    <Button
 
-
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:background="#00000000"
-        android:id="@+id/saveButton"
-        android:src="@drawable/save"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="@string/imageReference"
-        android:layout_weight="0.15" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView20"
-        android:text="@string/xdaText"
-        android:layout_gravity="center_horizontal" />
-
-    <ImageButton
-        android:layout_width="63dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:id="@+id/xda"
-        android:src="@drawable/xda"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.06" />
-
-
+    android:layout_width="150dp"
+    android:layout_height="65dp"
+    android:elevation="2sp"
+    android:layout_marginTop="16dp"
+    android:id="@+id/saveButton"
+    android:text="@string/save"
+    android:drawableStart="@drawable/save"
+    android:layout_gravity="center_horizontal"
+    style="?android:attr/colorButtonNormal" />
 
 </LinearLayout>

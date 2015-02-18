@@ -33,7 +33,6 @@ public class menu extends Activity {
             Button buttonlayers = (Button) findViewById(R.id.buttonlayers);
             Button buttondllayers = (Button) findViewById(R.id.buttondllayers);
 
-
             buttonlayers.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -51,7 +50,6 @@ public class menu extends Activity {
 
                 }
             });
-
 
 
         }else {

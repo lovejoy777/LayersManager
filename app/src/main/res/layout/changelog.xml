@@ -41,21 +41,6 @@
             android:id="@+id/textView10"
             android:layout_gravity="center_horizontal" />
 
-
-    <ImageButton
-        android:layout_width="96dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:elevation="22sp"
-        android:id="@+id/xdaButton1"
-        android:src="@drawable/xda"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.17" />
-
-
-
-
-
 </LinearLayout>
 
 </ScrollView>

@@ -20,13 +20,14 @@
         android:layout_marginTop="10dp"
         android:text="@string/instructionsTV6"
         android:textColor="@color/titles"
-        android:textSize="35sp"
+        android:textSize="@dimen/title_text_size"
         android:id="@+id/textView6"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:padding="24dp"
         android:layout_marginTop="20dp"
         android:text="@string/instructionsTV7"
         android:textSize="15sp"

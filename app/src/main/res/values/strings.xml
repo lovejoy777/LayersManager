@@ -2,12 +2,13 @@
 <resources>
 
     <string name="app_name">Layers Manager</string>
-    <string name="version">Version 0.05</string>
+    <string name="version">Version 0.10</string>
 
     <!-- Home Screen -->
     <string name="homeTitle">Home</string>
     <string name="homebutton1txt">Layers Installer</string>
     <string name="homebutton2txt">Download Layers</string>
+    <string name="homebutton3txt">installed Layers</string>
 
     <!-- layers installer -->
     <string name="yourpathhint">Your path will appear here</string>
@@ -80,26 +81,21 @@
     <string name="savecb">checkbox then press the save icon and restart the app</string>
     <string name="ticktoapply">Tick to apply Dark Theme</string>
     <string name="ifyouwantdark">If you want to have a dark ui then tick the</string>
-    <string name="xdaText">Visit the Layers XDA thread.</string>
+    <string name="save">Save</string>
 
     <!-- About -->
     <string name="aboutTV2">Developed by BitSyko Team </string>
     <string name="aboutTV3">An easy way to manage your favourite layers. </string>
     <string name="aboutversion">Version #</string>
-    <string name="credits">Layers</string>
-    <string name="creditlayers">Layers has been developed by the BitSyko Team.</string>
-    <string name="xdalink">BitSyko xda</string>
-    <string name="gpluslink">BitSyko G+</string>
+    <string name="bitsykotext">BitSyko</string>
 
     <!-- Changelog -->
 
     <string name="changelogtitle">Changelog</string>
     <string name="changelog">\n
-     • Replaced instructions text with an icon. \n
-     • Added layers image inside layers installer. \n
-     • Bye icons, Hello vectors. \n
-     • Aligned and resized texts. \n
-     • Fixed file view padding.</string>
+     • Full UI overhaul. \n
+     • Removed buttons from Settings and Changelog. \n
+     • \n</string>
 
     <!-- theme -->
     <string name="theme">Theme</string>
@@ -113,7 +109,5 @@
     <string name="layerstitlechoose">Choose a File</string>
     <string name="romtitlechoose">Choose Files</string>
     <string name="imageReference">this is an image</string>
-
-
 
 </resources>

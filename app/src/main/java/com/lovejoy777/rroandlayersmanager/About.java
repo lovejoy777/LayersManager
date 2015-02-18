@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 /**
@@ -22,8 +23,8 @@ public class About extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
 
-        ImageButton layersButton = (ImageButton) findViewById(R.id.layersButton);
-        ImageButton layersButton1 = (ImageButton) findViewById(R.id.layersButton1);
+        Button layersButton = (Button) findViewById(R.id.layersButton);
+        Button layersButton1 = (Button) findViewById(R.id.layersButton1);
 
         layersButton.setOnClickListener(new View.OnClickListener() {
 

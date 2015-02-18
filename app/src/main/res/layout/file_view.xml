@@ -11,7 +11,7 @@
 
     <TextView android:text="@+id/TextView01"
         android:id="@+id/TextView01"
-        android:textColor="@color/choosertext1"
+        android:textColor="?android:attr/colorControlNormal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"
@@ -23,7 +23,7 @@
     <TextView
         android:text="@+id/TextView02"
         android:id="@+id/TextView02"
-        android:textColor="@color/choosertext2"
+        android:textColor="?android:attr/colorControlNormal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dip"

@@ -97,14 +97,14 @@ public class WaitLayers extends Activity {
 
                         RootTools.remount("/system", "RW");
 
-                        // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
+                        // MK DIR /VENDOR/OVERLAY
                         CommandCapture command1 = new CommandCapture(0, "mkdir /vendor/overlay");
                         RootTools.getShell(true).add(command1);
                         while (!command1.isFinished()) {
                             Thread.sleep(1);
                         }
 
-                        // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 666
+                        // CHANGE PERMISSIONS OF FINAL /VENDOR/OVERLAY FOLDER & FILES TO 777
                         CommandCapture command2 = new CommandCapture(0, "chmod -R 777 /vendor/overlay");
                         RootTools.getShell(true).add(command2);
                         while (!command2.isFinished()) {
@@ -128,12 +128,14 @@ public class WaitLayers extends Activity {
                             Thread.sleep(1);
                             RootTools.remount("/system", "RO");
 
-                            finish();
+
                         }
+                        return;
                     }
 
-                        else if (SZN.endsWith(isapk)) {
-                        // CHANGE PERMISSIONS OF UNZIPPED FOLDER & FILES
+                        if (SZN.endsWith(isapk)) {
+
+                        // MK DIR SIONDATA
                         CommandCapture command1 = new CommandCapture(0, "mkdir " + siondata);
                         RootTools.getShell(true).add(command1);
                         while (!command1.isFinished()) {
@@ -153,6 +155,7 @@ public class WaitLayers extends Activity {
                         while (!command6.isFinished()) {
                             Thread.sleep(1);
                         }
+
 
                         RootTools.remount("/system", "RW");
 
@@ -186,7 +189,11 @@ public class WaitLayers extends Activity {
                         while (!command10.isFinished()) {
                             Thread.sleep(1);
                             RootTools.remount("/system", "RO");
+
+
                         }
+
+                            return;
                     }else{
                             Toast.makeText(WaitLayers.this, "Invalid file", Toast.LENGTH_LONG).show();
                         }

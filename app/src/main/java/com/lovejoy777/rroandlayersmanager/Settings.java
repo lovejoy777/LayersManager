@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -21,7 +22,7 @@ import com.stericson.RootTools.RootTools;
 public class Settings extends Activity implements View.OnClickListener {
 
     CheckBox cb;
-    ImageButton b;
+    Button b;
 
 
     @Override
@@ -31,19 +32,9 @@ public class Settings extends Activity implements View.OnClickListener {
         setContentView(R.layout.settings);
 
         cb = (CheckBox) findViewById(R.id.checkBoxDark);
-        b = (ImageButton) findViewById(R.id.saveButton);
+        b = (Button) findViewById(R.id.saveButton);
         b.setOnClickListener(this);
 
-        ImageButton xdaButton = (ImageButton) findViewById(R.id.xda);
-
-        xdaButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/sion-flashable-zips-init-d-installer-t2992612/post57934168#post57934168")));
-
-            }
-        });
     }
 
     private void savePrefs(String key, boolean value) {
