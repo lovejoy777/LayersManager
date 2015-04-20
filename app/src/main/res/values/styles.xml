@@ -1,42 +1,152 @@
-<resources>
+ <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light">
-        <!-- Main theme colors -->
-        <!--   your app branding color for the app bar -->
-        <item name="android:colorPrimary">#ff017fb3</item>
-        <!--   darker variant for the status bar and contextual app bars -->
-        <item name="android:colorPrimaryDark">#ff096e97</item>
-        <!--   theme UI controls like checkboxes and text fields -->
-        <item name="android:colorAccent">#ff096e97</item>
-        <!-- Customize your theme here. -->
+
+    <style name="LayersTheme" parent="MaterialDrawerTheme.TranslucentStatus">
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/dialog_accent</item>
+        <item name="material_drawer_window_background">@color/material_drawer_window_background
+        </item>
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_icons">@color/material_drawer_icons</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">@color/material_drawer_header_selection_text
+        </item>
+        <item name="android:alertDialogTheme">@style/DarkDialogCustom</item>
+    </style>
+
+    <style name="LayersThemeActivity" parent="MaterialDrawerTheme.ActionBar">
+        <item name="material_drawer_window_background">@color/material_drawer_window_background
+        </item>
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/dialog_accent</item>
+        <item name="android:alertDialogTheme">@style/DarkDialogCustom</item>
+    </style>
+
+    <style name="DarkDialogCustom" parent="@android:style/Theme.Material.Dialog">
+        <item name="android:colorAccent">@color/dialog_accent</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:title">25sp</item>
+        <item name="android:buttonStyle">@style/Dialog.Button</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+
+    <style name="Dialog.Button" parent="@android:style/Widget.Material.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/material_drawer_primary_text</item>
+    </style>
+
+    <!-- Material card -->
+    <style name="card.native.material_large_image_content_outer_layout" parent="card.native.content_outer_layout">
+        <item name="android:paddingLeft">
+            @dimen/card_main_content_native_material_large_image_paddingLeft
+        </item>
+        <item name="android:paddingRight">
+            @dimen/card_main_content_native_material_large_image_paddingRight
+        </item>
+        <item name="android:paddingTop">
+            @dimen/card_main_content_native_material_large_image_paddingTop
+        </item>
+        <item name="android:paddingBottom">
+            @dimen/card_main_content_native_material_large_image_paddingBottom
+        </item>
+    </style>
+
+
+    <style name="list_card.thumbnail1">
+
+        <item name="material_drawer_window_background">@color/material_drawer_window_background
+        </item>
+        <item name="material_drawer_background">@color/material_drawer_background</item>
 
     </style>
 
-    <!-- DARK THEME. -->
-    <!-- Customize your theme here. -->
-    <style name="DarkTheme" parent="android:Theme.Material">
-        <!--   your app branding color for the app bar -->
-        <item name="android:colorPrimary">#ff017fb3</item>
-        <!--   darker variant for the status bar and contextual app bars -->
-        <item name="android:colorPrimaryDark">#ff096e97</item>
-        <!--   theme UI controls like checkboxes and text fields -->
-        <item name="android:colorAccent">#ff096e97</item>
-        <!-- Customize your theme here. -->
+
+    <!-- CARDS -->
+    <style name="card_thumbnail_image_text_over_textstyle">
+        <item name="android:textColor">@color/card_thumbnail_image_text_over_textcolor</item>
+        <item name="android:textSize">@dimen/card_thumbnail_image_text_over_textsize</item>
+    </style>
+
+    <!-- white text -->
+    <style name="white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- black text -->
+    <style name="black_text" parent="MaterialDrawerTheme.Light.TranslucentStatus">
+        <item name="android:textColor">@color/black</item>
+        <item name="colorAccent">#ff000000</item>
+        <item name="material_drawer_primary_text">#ff000000</item>
+        <item name="material_drawer_secondary_text">#ff212121</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">#ff000011</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">#ff000000</item>
 
     </style>
 
-    <!-- Light THEME. -->
-    <!-- Customize your theme here. -->
-    <style name="LightTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <!--   your app branding color for the app bar -->
-        <item name="android:colorPrimary">#ff017fb3</item>
-        <!--   darker variant for the status bar and contextual app bars -->
-        <item name="android:colorPrimaryDark">#ff096e97</item>
-        <!--   theme UI controls like checkboxes and text fields -->
-        <item name="android:colorAccent">#ff096e97</item>
-        <!-- Customize your theme here. -->
 
+    <!-- Top Colored -->
+    <style name="card.native.top_colored_layout">
+        <item name="android:minHeight">@dimen/card_topcolored_layout_minHeigth</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/card_topcolored_layout_padding</item>
     </style>
+
+    <style name="card.native.top_colored_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/card_topcolored_title_textsize</item>
+        <item name="android:textColor">@color/card_topcolored_title_textcolor</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+    </style>
+
+    <style name="card.native.top_colored_subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/card_topcolored_subtitle_textsize</item>
+        <item name="android:textColor">@color/card_topcolored_subtitle_textcolor</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:paddingTop">@dimen/card_topcolored_subtitle_paddingtop</item>
+    </style>
+
+    <style name="FilePicker.Theme" parent="FilePicker.Theme.Base">
+        <item name="android:actionBarStyle">@style/FilePicker.ActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/FilePicker.ActionButton.Overflow</item>
+        <item name="android:actionBarItemBackground">@drawable/ab_solid_filepickertheme</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <!--<item name="android:windowBackground">@android:color
+        /transparent</item>-->
+        <!--<item name="android:actionBarWidgetTheme">@android:style/Theme.Holo</item>-->
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <!--file picker-->
+    <style name="FilePicker.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_filepickertheme</item>
+        <item name="android:displayOptions">disableHome|showTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="FilePicker.ActionButton.Overflow" parent="android:Widget.Holo.ActionButton.Overflow">
+        <!--<item name="android:src">@drawable/ic_action_overflow</item>-->
+    </style>
+
 
 </resources>

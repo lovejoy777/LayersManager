@@ -6,59 +6,68 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 /**
  * Created by lovejoy777 on 14/11/13.
  */
-public class About extends Activity {
-
-    //Button Btn1;
+public class About extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        LoadPrefs();
+        // GET SHARED PREFERENCES FOR SWITCH1 IN SETTINGS FOR WHITE OR BLACK TEXT
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean sw2value = sp.getBoolean("switch2", true);
+
+        if (sw2value) {
+
+            setTheme(R.style.white_text);
+
+        } else {
+
+            setTheme(R.style.black_text);
+
+        } // ENDS SWVALUE ELSE
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
 
-        Button layersButton = (Button) findViewById(R.id.layersButton);
-        Button layersButton1 = (Button) findViewById(R.id.layersButton1);
+        // Handle Toolbar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        layersButton.setOnClickListener(new View.OnClickListener() {
+        SharedPreferences prefs = getSharedPreferences("BackgroundColor",
+                MODE_PRIVATE);
+        int bgcolor = prefs.getInt("bgcolor", 1728053248);
 
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://forum.xda-developers.com/android/apps-games/official-layers-bitsyko-apps-rro-t3012172")));
+        ScrollView l1 = (ScrollView) findViewById(R.id.layout1);
+        l1.setBackgroundColor(bgcolor);
 
-
-            }
-        });
-
-        layersButton1.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/communities/102261717366580091389")));
-
-
-            }
-        });
+        RelativeLayout l2 = (RelativeLayout) findViewById(R.id.toolbar_container);
+        l2.setBackgroundColor(bgcolor);
 
     }
 
-    private void LoadPrefs() {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean cbValue = sp.getBoolean("CHECKBOX", false);
-        if(cbValue){
-            setTheme(R.style.DarkTheme);
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.back2, R.anim.back1);
+    }
 
-        }else{
-            setTheme(R.style.LightTheme);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.back2, R.anim.back1);
+            return true;
         }
-
-
+        return false;
     }
 }

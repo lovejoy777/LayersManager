@@ -1,61 +1,212 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="@dimen/tool_bar_top_padding">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:transitionName="actionBar" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_container">
+
+
+    <LinearLayout
+        xmlns:card="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/linearlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_container"
+        android:orientation="vertical">
+
+        <!-- TITLE TEXT -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/settingstitle"
+            android:textSize="@dimen/title_text_size" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#75000000"
+            android:layout_marginTop="16dp">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/settingstv1"
+            android:textSize="16sp" />
+
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/settingstv2"
+            android:id="@+id/switch1" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="1dp"
+            android:background="#75000000"
+            android:layout_marginTop="8dp">
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout4"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Pick a Color"
+            android:id="@+id/button1"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="#50000000"
+            android:layout_toEndOf="@+id/button1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView8"
+            android:layout_centerVertical="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set"
+            android:id="@+id/button2"
+            android:layout_marginEnd="16dp"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout5"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#75000000"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout6"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/linearlayout5"
+        android:layout_alignParentStart="true">
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/settingstv4"
+            android:id="@+id/switch2"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout7"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#75000000"
+        android:layout_below="@+id/linearlayout6"
+        android:layout_alignParentStart="true">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout8"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/linearlayout7"
+        android:layout_alignParentStart="true">
+
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_vertical_margin"
-        android:text="@string/settingsTitle"
-        android:textColor="@color/titles"
-        android:id="@+id/textView6"
-        android:layout_gravity="center_horizontal"
-        android:textSize="@dimen/title_text_size"  />
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/settingstv3"
+        android:textSize="14sp" />
 
-    <ImageView
-        android:layout_width="67dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:id="@+id/imageView15"
-        android:src="@drawable/settings"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.15" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Restart App"
+            android:id="@+id/button3"
+            android:layout_gravity="center" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_vertical_margin"
-        android:text="@string/ticktoapply"
-        android:id="@+id/checkBoxDark"
-        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ifyouwantdark"
-        android:id="@+id/textView10"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/savecb"
-        android:id="@+id/textView11"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-
-    android:layout_width="150dp"
-    android:layout_height="65dp"
-    android:elevation="2sp"
-    android:layout_marginTop="16dp"
-    android:id="@+id/saveButton"
-    android:text="@string/save"
-    android:drawableStart="@drawable/save"
-    android:layout_gravity="center_horizontal"
-    style="?android:attr/colorButtonNormal" />
-
-</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,106 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Layers Manager</string>
-    <string name="version">Version 0.10</string>
+
+    <string name="title_activity_main">GridView with Images</string>
+    <string name="img_description">Image Description</string>
+    <string name="img_original_description">Original Image Description</string>
+
+    <string name="app_name">Layers</string>
+    <string name="version">Version 3.5</string>
+    <string name="aboutversion">Version 3.5</string>
 
     <!-- Home Screen -->
     <string name="homeTitle">Home</string>
     <string name="homebutton1txt">Layers Installer</string>
-    <string name="homebutton2txt">Download Layers</string>
-    <string name="homebutton3txt">installed Layers</string>
+    <string name="homebutton2txt">Layers Manager</string>
+    <string name="homebutton3txt">Preview Installer</string>
+    <string name="catchphrase">\"Your Style Your Choice\"</string>
 
-    <!-- layers installer -->
-    <string name="yourpathhint">Your path will appear here</string>
-    <string name="layersTitle">Install layers</string>
-    <string name="layersbutton1txt">Select Layer to install</string>
-    <string name="layersbutton2txt">Install Your Chosen layers</string>
-    <string name="layersbutton3txt">Reboot Your Device\nfor your layers to take effect</string>
-    <string name="layersbutton4txt">Installed Layers</string>
-    <string name="layersbutton5txt">Delete selected</string>
-    <string name="layersbutton6txt">Delete All</string>
-    <string name="deletelayersTitle">Manage layers</string>
-    <string name="layersconfirmdel">  Tick to activate Delete buttons</string>
+    <!-- MENU layers installer -->
+    <string name="yourpathhint">Your layers path will appear here</string>
+    <string name="layersTitle">apply layers</string>
+    <string name="layersbutton1txt">Select a layer to apply</string>
+    <string name="layersbutton2txt">apply / Preview layers</string>
+    <string name="layersbutton3txt">Reboot for Changes to take effect</string>
+    <string name="layersbutton4txt">applied Layers</string>
 
-    <!-- Loading Screen -->
-    <string name="bepatient">Please be patient</string>
-    <string name="loading">Loading</string>
-    <string name="loadingdescript1">Copying your chosen file</string>
-    <string name="loadingdescript2">and installing an</string>
-    <string name="loadingdescript3">recovery update script</string>
-    <string name="loadingdescript4">Your device will reboot to recovery</string>
-    <string name="loadingdescript5">install your .zip file</string>
-    <string name="loadingdescript6">then reboot back to your System.</string>
-    <string name="loadingdescript8">You will need to reboot</string>
-    <string name="loadingdescript9">for the script to take effect.</string>
-    <string name="loadingdescript10">and installing a</string>
-    <string name="loadingdescript11">layers overlay</string>
+    <!-- backup -->
+    <string name="yourrestorehint">Your restore name will appear here</string>
+    <string name="backupetpathhint">Enter a Backup Name Here</string>
+    <string name="backupbutton1txt">Backup all applied Layers</string>
+    <string name="backupbutton2txt">Select a Backup to Restore</string>
+    <string name="backupbutton3txt">Restore Selected Backup</string>
+
+    <!-- delete -->
+    <string name="yourdeletehint">Your selected file path will appear here</string>
+    <string name="deletechooserbutton1txt">Select a Layer to Remove</string>
+    <string name="deleteselectedbutton2txt">Remove Selected Layers</string>
+    <string name="deleteallbutton3txt">Remove All applied Layers</string>
+    <string name="deleterebootbutton4txt">Reboot to Remove Layers</string>
+
 
     <!-- Dropdown Settings Menu -->
     <string name="action_instructions">Instructions</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_themes">Settings</string>
     <string name="action_about">About</string>
     <string name="action_changelog">Change Log</string>
-    <string name="action_donate">Donations</string>
+    <string name="action_manager">Manager</string>
+    <string name="action_installall">Install All</string>
+    <string name="action_forum">Forums</string>
+    <string name="action_website">Website</string>
+    <string name="action_xda">Xda</string>
+    <string name="action_gplus">G+</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- settings -->
+    <string name="settingstitle">Settings</string>
+    <string name="settingstv1">Layout View</string>
+    <string name="settingstv2">Choose GridView or CardView</string>
+    <string name="settingstv3">Restart Layers Manager for changes to take effect</string>
+    <string name="settingstv4">Dark or Light theme for text/images</string>
 
     <!-- INSTRUCTIONS -->
     <string name="instructionsTV1">Select what type of file you are installing from the Home screen.</string>
     <string name="instructionsTV6">Layers Installer</string>
     <string name="instructionsTV7">
-    Installing Layers:\n
-    ******************\n
-    • Click on Button 1 on the home screen \"Layers Installer\".\n
-    • Click Button 1 on Install Layers screen \"Choose Your Layers.zip that you predownloaded\".\n
-    • Navigate to your predownloaded layers.zip or individual .apk file that you want to install and click it.\n
-    • Click Button 2 "Install Chosen Layer".\n
-    (you can then check whats installed by clicking Button \"Installed Layers\").\n
-    • Delete what you don\'t want before clicking Button 3 \"Reboot Your Device\"\, for the layers to take effect.\n
+    <u><b>Installing Layers:</b></u>\n
+    • From the Install screen.\n
+    • Click on the \"File Chooser\" button.\n
+    • Select your Layers.zip that you pre-downloaded or individual .apk file that you want to install and click it.\n
+    • If the theme dev has provided previews for the theme a preview screen will pop-up otherwise it will just apply the chosen file.\n
+    • Click on any preview to see a zoomed in image (you can pinch zoom again in the fullscreen mode). If you like that particular apk hit back and then long-press on the preview to install that particular themed apk.\n
+    • If you want to install all themed apk\'s use the \"tick\" icon in the action bar. \"Reboot for Changes to Take Effect\" button for the layers to be installed.\n
+    (you can then check whats installed by clicking the \"Installed Layers\" Button).\n
     \n
-    Deleting 1 layer at a time:\n
-    ***************************\n
-    • Click Button 4 \"installed Layers\".\n
-    • Pick a layer.apk to delete.\n
-    • Check the checkbox then click bottom left button \"Delete Your Chosen Layer\".\n
-    (you can then click button 4 again to check it was deleted).\n
+    <u><b>Delete Multiple layers at a time:</b></u>\n
+    • From the nav drawer select Delete Layers\n
+    • Click the \"Delete File Chooser\" button.\n
+    • Select layer.apks you want to delete.\n
+    • Click the \"Delete Selected Layers\" button.\n
+    (you can then click the \"File Chooser\" button again to check it was deleted).\n
     \n
-    Deleting everything in the Installed folder:\n
-    ********************************************\n
-    • Check the checkbox.\n
-    • Click the bottom right button \"Delete all Installed Layers\".\n
-    (click button 4 again to check they have all gone).\n
+    <u><b>Deleting everything in the Overlays folder:</b></u>\n
+    • Click the \"Delete All Layers\" Button.\n
+    (you can then click the \"File Chooser\" button again to check they have all been deleted).\n
     \n
-    TIPS:\n
-    *****\n
-    • You can package any number of layers.apk\'s into a folder of your choice then zip the whole folder and install it in one go or just pick the .apk\'s 1x1.\n
-    • Use the \"Installed Layers\" Button to check whats currently installed.\n
-    • You also need to reboot after deleting to remove them from your system.\n
+    <u><b>Backup / Restore:</b></u>\n
+    • From the nav drawer select Backup/restore.\n
+    \n
+    <u><b>Backup:</b></u>\n
+    • Click the \"Backup All Applied Layers\" button and enter a name for your backup.\n
+    \n
+    <u><b>Restore:</b></u>\n
+    • Click the \"File Chooser\" button and click your chosen saved folder then click the overlay.zip file.\n
+    (you can use this to check what saved layers you have).\n
+    • Check the file path is correct in the text view then click the \"Restore Selected Backup\" button then click the \"Reboot for Changes to Take Effect\" button for your backup to be restored.\n
+    \n
+    <u><b>SETTINGS:</b></u>\n
+    • You can customize the apps complete UI to match your Layers themes. \n
+    • After you make any changes restart the app for them to take effect. \n
+    \n
+    <u><b>TIPS:</b></u>\n
+    • You can package any number of layers.apk\'s into a folder of your choice then zip the whole folder and apply it in one go or just pick the .apk\'s 1x1.\n
+    • Use the \"Applied Layers\" button to check whats currently applied.\n
+    • You also need to reboot after installing, deleting or restoring for the changes to take effect.\n
+    • There\'s some useful links at the bottom of the nav drawer.\n
+    • Ask your theme dev for the Hex code for background color and input it in settings, code must start with #.\n
+
+
     </string>
 
     <!-- Settings Screen -->
-    <string name="settingsTitle">Settings</string>
-    <string name="savecb">checkbox then press the save icon and restart the app</string>
-    <string name="ticktoapply">Tick to apply Dark Theme</string>
-    <string name="ifyouwantdark">If you want to have a dark ui then tick the</string>
-    <string name="save">Save</string>
 
     <!-- About -->
-    <string name="aboutTV2">Developed by BitSyko Team </string>
+    <string name="aboutTV2">Developed by the BS™ Team </string>
     <string name="aboutTV3">An easy way to manage your favourite layers. </string>
-    <string name="aboutversion">Version #</string>
-    <string name="bitsykotext">BitSyko</string>
+    <string name="aboutTV4">Meet the Team. </string>
+    <string name="aboutTV5">Syko. </string>
+    <string name="aboutTV6">Lovejoy777. </string>
+    <string name="aboutTV7">Bgill55. </string>
+
+    <string name="bitsykotext">BS™</string>
 
     <!-- Changelog -->
-
     <string name="changelogtitle">Changelog</string>
-    <string name="changelog">\n
-     • Full UI overhaul. \n
-     • Removed buttons from Settings and Changelog. \n
-     • \n</string>
+    <string name="changelog">
+     • <u><b>3.5</b></u>\n
+     • Complete rewrite\n
+     • <u><b>3.4</b></u>\n
+     • bug fixes\n
+     • <u><b>3.3</b></u>\n
+     • Added Backup / Restore section.\n
+     • <u><b>3.2</b></u>\n
+     • New UI\n
 
-    <!-- theme -->
-    <string name="theme">Theme</string>
-    <string name="light">Light</string>
-    <string name="dark">Dark</string>
+     •
+    </string>
 
     <!-- Misc -->
     <string name="content">Image</string>
@@ -109,5 +143,61 @@
     <string name="layerstitlechoose">Choose a File</string>
     <string name="romtitlechoose">Choose Files</string>
     <string name="imageReference">this is an image</string>
+    <string name="title_activity_pref">PrefActivity</string>
+    <string name="title_activity_pref_fragment">PrefFragment</string>
+    <string name="layersmanager">Layers Manager</string>
+    <string name="layerspreview">LAYERS PREVIEW</string>
+    <string name="title_activity_theme">themeActivity</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+
+    <!-- MAIN HEADER DRAWER -->
+    <string name="drawer_item_manager">Install Layers</string>
+    <string name="drawer_item_backups">Backup/Restore</string>
+    <string name="drawer_item_remove">Delete Layers</string>
+    <string name="drawer_item_about">About</string>
+    <string name="drawer_item_changelog">Changelog</string>
+    <string name="drawer_item_instructions">Instructions</string>
+    <string name="drawer_item_settings">Settings</string>
+
+    <string name="drawer_item_links_header">Useful Links</string>
+    <string name="drawer_item_gplus">G +</string>
+    <string name="drawer_item_xda">Xda</string>
+    <string name="drawer_item_forum">Forum</string>
+    <string name="drawer_item_website">Website</string>
+
+    <string name="drawer_item_compact_header">CompactHeader Sample</string>
+    <string name="drawer_item_action_bar">ActionBar Sample</string>
+    <string name="drawer_item_multi_drawer">MultiDrawer Sample</string>
+    <string name="drawer_item_non_translucent_status_drawer">NonTranslucentStatusDrawer Sample</string>
+    <string name="title_activity_icon_main">IconMainActivity</string>
+
+    <string name="card_progressbar_cardwithlist_text">Loading</string>
+
+    <!-- FILECHOOSER -->
+    <string name="new_folder">New folder</string>
+    <string name="create_folder_error">Failed to create folder</string>
+    <string name="name">Name</string>
+    <string name="go_back">Go back</string>
+    <string name="back">Back</string>
+    <string name="select_something_first">Nothing Selected</string>
+
+    <plurals
+        name="select_dir">
+        <item quantity="one">Select directory</item>
+        <item quantity="other">Select directories</item>
+    </plurals>
+
+    <plurals
+        name="select_file">
+        <item quantity="one">Select Layers</item>
+        <item quantity="other">Select files</item>
+    </plurals>
+
+    <plurals
+        name="select_dir_or_file">
+        <item quantity="one">Select directory or file</item>
+        <item quantity="other">Select directories or files</item>
+    </plurals>
+
 
 </resources>

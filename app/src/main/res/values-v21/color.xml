@@ -105,6 +105,7 @@
     <color name="saddlebrown">#8B4513</color>
     <color name="darkmagenta">#8B008B</color>
     <color name="darkred">#8B0000</color>
+    <color name="darkredprimary">#FFAD0000</color>
     <color name="blueviolet">#8A2BE2</color>
     <color name="lightskyblue">#87CEFA</color>
     <color name="skyblue">#87CEEB</color>
@@ -154,6 +155,6 @@
     <color name="mediumblue">#0000CD</color>
     <color name="darkblue">#00008B</color>
     <color name="navy">#000080</color>
-    <color name="black">#000000</color>
+    <color name="black">#ff1c1c1c</color>
 
 </resources>

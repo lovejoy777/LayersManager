@@ -3,142 +3,248 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.lovejoy777.rroandlayersmanager">
 
-    <uses-permission
-        android:name="android.permission.ACCESS_SUPERUSER" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission
-        android:name="android.permission.ACCESS_ALL_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_EXTERNAL_STORAGE" />
     <uses-permission
         android:name="android.permission.WRITE_MEDIA_STORAGE"
         tools:ignore="ProtectedPermissions" />
 
-
     <application
-
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/LightTheme" >
-
+        android:icon="@mipmap/ic_launcher"
+        android:label="Manager">
         <activity
             android:name=".menu"
-            android:label="@string/app_name"
-            android:icon="@drawable/layers" >
+            android:noHistory="true"
+            android:theme="@style/LayersTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
-            android:name=".Layers"
+            android:name=".ColorMain"
+            android:icon="@mipmap/ic_launcher"
+            android:label="color picker"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.COLORPICKER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".managers.CardManager"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Install"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.CARDMANAGER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".managers.GridManager"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Install"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.GRIDMANAGER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BackUpRestore"
+            android:icon="@mipmap/ic_launcher"
+            android:noHistory="true"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.BACKUPRESTOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".backups.CardBackupRestore"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Backups"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.CARDBACKUPRESTORE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".backups.GridBackupRestore"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Backups"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.GRIDBACKUPRETORE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeleteLayers"
+            android:icon="@mipmap/ic_launcher"
+            android:noHistory="true"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.DELETELAYERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".deleters.CardDeleteLayers"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Delete"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.CARDDELETELAYERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".deleters.GridDeleteLayers"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Delete"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.GRIDDELETELAYERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Manager"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GridViewActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Previews"
+            android:largeHeap="true"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.GRIDVIEWACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FullScreenViewActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Preview"
+            android:parentActivityName=".GridViewActivity"
+            android:theme="@style/LayersTheme">
+            >
+        </activity>
+        <activity
+            android:name=".DeletePreview"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Preview"
+            android:parentActivityName=".GridViewActivity"
+            android:theme="@style/LayersTheme">
+            <intent-filter>
+                <action android:name="bs.layersmanager.DELETEPREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".filepicker.FilePickerActivity"
             android:label="@string/app_name"
-            android:icon="@drawable/layers"
-            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu" >
+            android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="com.lovejoy777.rroandlayersmanager.LAYERS" />
+                <action android:name="android.intent.action.GET_CONTENT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".LayersChooser"
-            android:label="@string/app_name"
-            android:icon="@drawable/layers"
-            android:parentActivityName="com.lovejoy777.rroandlayersmanager.Layers">
-            <intent-filter>
-                <action android:name="com.lovejoy777.rroandlayersmanager.LAYERSCHOOSER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.lovejoy777.rroandlayersmanager.DeleteLayersChooser"
-            android:label="@string/app_name"
-            android:icon="@drawable/layers"
-            android:parentActivityName="com.lovejoy777.rroandlayersmanager.Layers">
-            <intent-filter>
-                <action android:name="com.lovejoy777.rroandlayersmanager.DELETELAYERSCHOOSER" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".WaitLayers"
-            android:label="@string/app_name"
-            android:icon="@drawable/layers" >
-            <intent-filter>
-                <action android:name="com.lovejoy777.rroandlayersmanager.WAITLAYERS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.lovejoy777.rroandlayersmanager.Settings"
-            android:label="Settings"
-            android:icon="@drawable/layers" >
-            <intent-filter>
-                <action android:name="android.intent.action.SETTINGS" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.lovejoy777.rroandlayersmanager.Instructions"
+            android:name=".Instructions"
+            android:icon="@mipmap/ic_launcher"
             android:label="Instructions"
-            android:icon="@drawable/layers"
-            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu">
+            android:parentActivityName=".managers.CardManager"
+            android:theme="@style/LayersTheme">
             <intent-filter>
                 <action android:name="android.intent.action.INSTRUCTIONS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.lovejoy777.rroandlayersmanager.About"
+            android:name=".About"
+            android:icon="@mipmap/ic_launcher"
             android:label="About"
-            android:icon="@drawable/layers"
-            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu">
+            android:parentActivityName=".managers.CardManager"
+            android:theme="@style/LayersTheme">
             <intent-filter>
                 <action android:name="android.intent.action.ABOUT" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.lovejoy777.rroandlayersmanager.ChangeLog"
+            android:name=".ChangeLog"
+            android:icon="@mipmap/ic_launcher"
             android:label="ChangeLog"
-            android:icon="@drawable/layers"
-            android:parentActivityName="com.lovejoy777.rroandlayersmanager.menu">
+            android:parentActivityName=".managers.CardManager"
+            android:theme="@style/LayersTheme">
             <intent-filter>
                 <action android:name="android.intent.action.CHANGELOG" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.lovejoy777.rroandlayersmanager.PlaystoreSuperUser"
-            android:label="@string/app_name"
-            android:icon="@drawable/layers"
-            android:screenOrientation="portrait">
+            android:name=".InstallAll"
+            android:parentActivityName=".menu"
+            android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="com.sion.lovejoy777sa.sion.PLAYSU" />
+                <action android:name="android.intent.action.INSTALLALL" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PlaystoreSuperUser"
+            android:icon="@mipmap/ic_launcher"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="bs.layersmanager.PLAYSU" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
+

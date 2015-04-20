@@ -1,47 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="@dimen/tool_bar_top_padding">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:elevation="4dp"
+            android:transitionName="actionBar" />
+    </RelativeLayout>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/toolbar_container"
     android:orientation="vertical"
     android:padding="0dp">
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:weightSum="1">
+    <LinearLayout
 
-    <!-- TITLE TEXT -->
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/changelogtitle"
-        android:id="@+id/textView9"
-        android:textColor="@color/titles"
-        android:textSize="@dimen/title_text_size"
-        android:layout_gravity="center_horizontal" />
+        android:orientation="vertical"
+        android:weightSum="1">
 
+        <!-- TITLE TEXT -->
         <TextView
+            android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/version"
-            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+
+            android:text="@string/changelogtitle"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
             android:id="@+id/textView"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/changelog"
-            android:textSize="15sp"
-            android:id="@+id/textView10"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:text="@string/version"
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/changelog"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 
 </ScrollView>
+
+
+    </RelativeLayout>
 

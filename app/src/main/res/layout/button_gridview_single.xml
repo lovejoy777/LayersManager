@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:elevation="2dp"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="70dp"
+        android:src="@drawable/add"
+        android:layout_height="70dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+    </ImageView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_below="@+id/linearlayout1">
+
+    <TextView
+        android:id="@+id/grid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="main text"
+        android:textSize="20sp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/grid_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="sub text"
+        android:textSize="12sp">
+    </TextView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

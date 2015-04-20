@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 /*
  * Copyright 2014, The Android Open Source Project
  *
@@ -20,12 +19,12 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
+    android:viewportHeight="24"
+    android:viewportWidth="24">
 
     <group
-            android:translateX="0.27280934"
-            android:translateY="1.0840165">
+        android:translateX="0.27280934"
+        android:translateY="1.0840165">
         <path
             android:fillColor="#fff"
             android:pathData="M 11.652,12.667 L 23.303,6.333 11.652,0 0,6.333 Z" />

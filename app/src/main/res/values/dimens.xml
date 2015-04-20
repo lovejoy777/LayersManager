@@ -4,8 +4,93 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="title_text_size">35sp</dimen>
     <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="tool_bar_top_padding">0dp</dimen>
     <dimen name="setSubHead">40sp</dimen>
     <dimen name="under_button_text">14sp</dimen>
     <dimen name="icon_padding">20dp</dimen>
+
+
+    <dimen name="red_action_button_size">108dp</dimen>
+    <dimen name="red_action_button_margin">48dp</dimen>
+
+    <dimen name="red_action_button_content_size">16dp</dimen>
+    <dimen name="red_action_button_content_margin">36dp</dimen>
+
+    <dimen name="red_action_menu_radius">96dp</dimen>
+    <dimen name="blue_sub_action_button_size">48dp</dimen>
+    <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
+
+    <dimen name="radius_large">120dp</dimen>
+    <dimen name="radius_small">30dp</dimen>
+    <dimen name="radius_medium">72dp</dimen>
+
+
+    <dimen name="card_material_largeimage_height">200dp</dimen>
+
+    <!-- Actions -->
+    <dimen name="actions_textsize">14sp</dimen>
+    <dimen name="actions_padding">16dp</dimen>
+    <dimen name="actions_padding_left">8dp</dimen>
+    <dimen name="actions_icon_height">54dp</dimen>
+    <dimen name="actions_icon_width">54dp</dimen>
+
+    <!-- Material Card Text over image -->
+    <dimen name="card_thumbnail_image_text_over_textsize">24sp</dimen>
+    <dimen name="card_thumbnail_image_text_over_padding_right">16dp</dimen>
+    <dimen name="card_thumbnail_image_text_over_padding_left">16dp</dimen>
+    <dimen name="card_thumbnail_image_text_over_padding_bottom">16dp</dimen>
+    <dimen name="card_thumbnail_image_text_over_padding_top">16dp</dimen>
+    <dimen name="card_main_content_native_material_large_image_paddingLeft">16dp</dimen>
+    <dimen name="card_main_content_native_material_large_image_paddingRight">16dp</dimen>
+    <dimen name="card_main_content_native_material_large_image_paddingBottom">16dp</dimen>
+    <dimen name="card_main_content_native_material_large_image_paddingTop">16dp</dimen>
+
+    <!-- TopColored -->
+    <dimen name="card_topcolored_title_textsize">22dp</dimen>
+    <dimen name="card_topcolored_subtitle_textsize">14dp</dimen>
+    <dimen name="card_topcolored_subtitle_paddingtop">18dp</dimen>
+    <dimen name="card_topcolored_layout_padding">16dp</dimen>
+    <dimen name="card_topcolored_layout_minHeigth">72dp</dimen>
+
+    <!-- SIMPLE CARD HEADER -->
+    <dimen name="card_base_empty_height">70dp</dimen>
+    <dimen name="card_header_simple_title_margin_bottom">24dp</dimen>
+    <dimen name="card_header_simple_title_margin_left">102dp</dimen>
+    <dimen name="card_header_simple_title_margin_right">20dp</dimen>
+    <dimen name="card_header_simple_title_margin_top">24dp</dimen>
+    <dimen name="card_header_simple_title_text_size">30sp</dimen>
+    <dimen name="card_section_title">30sp</dimen>
+    <dimen name="card_section_title_margin_top">0sp</dimen>
+
+    <!-- SIMPLE CARD THUMBNAIL <dimen name="card_main_simple_title_text_size">30sp</dimen>-->
+    <dimen name="card_thumbnail_height">62dp</dimen>
+    <dimen name="card_thumbnail_width">62dp</dimen>
+    <dimen name="card_main_simple_title_margin_top">24dp</dimen>
+    <dimen name="card_main_simple_title_margin_bottom">30dp</dimen>
+    <dimen name="card_main_simple_title_margin_left">30dp</dimen>
+    <dimen name="card_main_simple_title_margin_right">0dp</dimen>
+
+
+    <dimen name="card_shadow_height">5dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="floating_button_size">40dp</dimen>
+
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="SmallImageCard_height">60dp</dimen>
+
+    <dimen name="title_size">28sp</dimen>
+    <dimen name="bigger_title_size">28sp</dimen>
+    <dimen name="description_size">28sp</dimen>
+    <dimen name="button_size">14sp</dimen>
+
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
 
 </resources>

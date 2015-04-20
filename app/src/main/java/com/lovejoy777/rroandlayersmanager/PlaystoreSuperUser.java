@@ -14,31 +14,16 @@ public class PlaystoreSuperUser extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        LoadPrefs();
+
         super.onCreate(savedInstanceState);
 
         final String appPackageName = "com.noshufou.android.su"; // getPackageName() from Context or Activity object
         try {
+
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
         } catch (android.content.ActivityNotFoundException anfe) {
+
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appPackageName)));
         }
-
-
-    }
-
-    private void LoadPrefs() {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean cbValue = sp.getBoolean("CHECKBOX", false);
-        if(cbValue){
-            setTheme(R.style.DarkTheme);
-
-        }else{
-            setTheme(R.style.LightTheme);
-
-        }
-
-
     }
 }
-
