@@ -27,6 +27,12 @@
         android:layout_below="@+id/toolbar_container"
         android:orientation="vertical">
 
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:fillViewport="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical">
         <TextView
             android:id="@+id/tvlayerspath"
             android:layout_width="match_parent"
@@ -39,6 +45,7 @@
             android:hint="@string/yourdeletehint"
             android:textSize="18sp" />
 
+        </ScrollView>
 
     <GridView
         android:layout_width="fill_parent"
