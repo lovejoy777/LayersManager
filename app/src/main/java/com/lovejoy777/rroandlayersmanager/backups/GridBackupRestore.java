@@ -12,6 +12,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -181,7 +182,7 @@ public class GridBackupRestore extends ActionBarActivity {
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withActionBarDrawerToggleAnimated(true)
-                .withDisplayBelowToolbar(true)
+               // .withDisplayBelowToolbar(true)
                 .withSliderBackgroundColor(bgcolor)
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                 .addDrawerItems(
@@ -800,11 +801,18 @@ public class GridBackupRestore extends ActionBarActivity {
 
     @Override
     public void onBackPressed() {
-        if (result != null && result.isDrawerOpen()) {
-            result.closeDrawer();
-        } else {
-            super.onBackPressed();
+        super.onBackPressed();
+        overridePendingTransition(R.anim.back2, R.anim.back1);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
             overridePendingTransition(R.anim.back2, R.anim.back1);
+            return true;
         }
+        return false;
     }
 }

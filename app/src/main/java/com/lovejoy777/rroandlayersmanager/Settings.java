@@ -10,6 +10,7 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -155,7 +156,7 @@ public class Settings extends ActionBarActivity {
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withActionBarDrawerToggleAnimated(true)
-                .withDisplayBelowToolbar(true)
+               // .withDisplayBelowToolbar(true)
                 .withSliderBackgroundColor(bgcolor)
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                 .addDrawerItems(
@@ -236,11 +237,11 @@ public class Settings extends ActionBarActivity {
                 if(isChecked){
 
                     savePrefs("switch1", true);
-                    Toast.makeText(Settings.this, "CardView", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(Settings.this, "CardView", Toast.LENGTH_SHORT).show();
                 }else{
 
                     savePrefs("switch1", false);
-                    Toast.makeText(Settings.this, "GridView", Toast.LENGTH_SHORT).show();
+                  //  Toast.makeText(Settings.this, "GridView", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -259,11 +260,11 @@ public class Settings extends ActionBarActivity {
                 if(isChecked){
 
                     savePrefs("switch2", true);
-                    Toast.makeText(Settings.this, "Light Theme", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(Settings.this, "Light Theme", Toast.LENGTH_SHORT).show();
                 }else{
 
                     savePrefs("switch2", false);
-                    Toast.makeText(Settings.this, "Dark Theme", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(Settings.this, "Dark Theme", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -300,7 +301,7 @@ public class Settings extends ActionBarActivity {
 
                 backgroundColor(bgcolor);
 
-                Toast.makeText(Settings.this, "Color Set", Toast.LENGTH_LONG).show();
+              //  Toast.makeText(Settings.this, "Color Set", Toast.LENGTH_LONG).show();
 
                 // finish();
 
@@ -390,6 +391,28 @@ public class Settings extends ActionBarActivity {
         SharedPreferences.Editor edit = sp.edit();
         edit.putBoolean(key, value);
         edit.commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.back2, R.anim.back1);
+        Intent k = new Intent(this, menu.class);
+        k.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(k);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            overridePendingTransition(R.anim.back2, R.anim.back1);
+
+
+            return true;
+        }
+        return false;
     }
 
 }

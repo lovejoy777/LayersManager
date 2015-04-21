@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -184,7 +185,7 @@ public class GridManager extends ActionBarActivity {
                 .withToolbar(toolbar)
                 .withSliderBackgroundColor(bgcolor)
                 .withActionBarDrawerToggleAnimated(true)
-                .withDisplayBelowToolbar(true)
+               // .withDisplayBelowToolbar(true)
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                 .addDrawerItems(
                         // new PrimaryDrawerItem().withName(R.string.drawer_item_compact_header).withIcon(GoogleMaterial.Icon.gmd_wb_sunny).withIdentifier(100).withCheckable(false),
@@ -878,11 +879,21 @@ public class GridManager extends ActionBarActivity {
 
     @Override
     public void onBackPressed() {
-        if (result != null && result.isDrawerOpen()) {
-            result.closeDrawer();
-        } else {
-            super.onBackPressed();
+        super.onBackPressed();
+        overridePendingTransition(R.anim.back2, R.anim.back1);
+        Intent k = new Intent(this, menu.class);
+        k.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(k);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
             overridePendingTransition(R.anim.back2, R.anim.back1);
+            return true;
         }
+        return false;
     }
 } // ENDS GRIDMANAGER
