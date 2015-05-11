@@ -7,8 +7,7 @@
     <string name="img_original_description">Original Image Description</string>
 
     <string name="app_name">Layers</string>
-    <string name="version">Version 3.5</string>
-    <string name="aboutversion">Version 3.5</string>
+    <string name="version">Version 3.6</string>
 
     <!-- Home Screen -->
     <string name="homeTitle">Home</string>
@@ -124,6 +123,9 @@
     <!-- Changelog -->
     <string name="changelogtitle">Changelog</string>
     <string name="changelog">
+     • <u><b>3.6</b></u>\n
+     • Added scroll view for multiselect delete paths.\n
+     • Removed unneeded items from navigation drawers.\n
      • <u><b>3.5</b></u>\n
      • Complete rewrite\n
      • <u><b>3.4</b></u>\n
@@ -198,6 +200,11 @@
         <item quantity="one">Select directory or file</item>
         <item quantity="other">Select directories or files</item>
     </plurals>
+
+    <!-- FAB -->
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur magna tortor, semper eu feugiat eu, vehicula vitae lacus.</string>
+    <string name="recyclerview_fab_example">RecyclerView FAB example</string>
+    <string name="floating_action_menu">Floating Action Menu</string>
 
 
 </resources>

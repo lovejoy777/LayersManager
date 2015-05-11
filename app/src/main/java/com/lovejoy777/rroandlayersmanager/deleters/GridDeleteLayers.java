@@ -175,9 +175,9 @@ public class GridDeleteLayers extends ActionBarActivity {
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                 .addDrawerItems(
                         // new PrimaryDrawerItem().withName(R.string.drawer_item_compact_header).withIcon(GoogleMaterial.Icon.gmd_wb_sunny).withIdentifier(100).withCheckable(false),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers).withIdentifier(1).withCheckable(false),
+                      //  new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers).withIdentifier(1).withCheckable(false),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_backups).withIcon(R.drawable.ic_backup).withIdentifier(2).withCheckable(false),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_remove).withIcon(R.drawable.ic_delete).withIdentifier(3).withCheckable(false),
+                      //  new PrimaryDrawerItem().withName(R.string.drawer_item_remove).withIcon(R.drawable.ic_delete).withIdentifier(3).withCheckable(false),
                         new DividerDrawerItem(),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_about).withIcon(R.drawable.ic_about).withIdentifier(4).withCheckable(false),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_changelog).withIcon(R.drawable.ic_changelog).withIdentifier(5).withCheckable(false),
@@ -196,15 +196,15 @@ public class GridDeleteLayers extends ActionBarActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
 
                         if (drawerItem != null) {
-                            if (drawerItem.getIdentifier() == 1) {
-                                Intent intent = new Intent(GridDeleteLayers.this, menu.class);
-                                GridDeleteLayers.this.startActivity(intent);
-                            } else if (drawerItem.getIdentifier() == 2) {
+                            if (drawerItem.getIdentifier() == 2) {
+                         //       Intent intent = new Intent(GridDeleteLayers.this, menu.class);
+                         //       GridDeleteLayers.this.startActivity(intent);
+                         //   } else if (drawerItem.getIdentifier() == 2) {
                                 Intent intent = new Intent(GridDeleteLayers.this, BackUpRestore.class);
                                 GridDeleteLayers.this.startActivity(intent);
-                            } else if (drawerItem.getIdentifier() == 3) {
-                                Intent intent = new Intent(GridDeleteLayers.this, DeleteLayers.class);
-                                GridDeleteLayers.this.startActivity(intent);
+                         //   } else if (drawerItem.getIdentifier() == 3) {
+                          //      Intent intent = new Intent(GridDeleteLayers.this, DeleteLayers.class);
+                          //      GridDeleteLayers.this.startActivity(intent);
                             } else if (drawerItem.getIdentifier() == 4) {
                                 Intent intent = new Intent(GridDeleteLayers.this, About.class);
                                 GridDeleteLayers.this.startActivity(intent);
@@ -282,9 +282,9 @@ public class GridDeleteLayers extends ActionBarActivity {
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                 .addDrawerItems(
                         // new PrimaryDrawerItem().withName(R.string.drawer_item_compact_header).withIcon(GoogleMaterial.Icon.gmd_wb_sunny).withIdentifier(100).withCheckable(false),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers_dark).withIdentifier(1).withCheckable(false),
+                       // new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers_dark).withIdentifier(1).withCheckable(false),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_backups).withIcon(R.drawable.ic_backup_dark).withIdentifier(2).withCheckable(false),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_remove).withIcon(R.drawable.ic_delete_dark).withIdentifier(3).withCheckable(false),
+                       // new PrimaryDrawerItem().withName(R.string.drawer_item_remove).withIcon(R.drawable.ic_delete_dark).withIdentifier(3).withCheckable(false),
                         new DividerDrawerItem(),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_about).withIcon(R.drawable.ic_about_dark).withIdentifier(4).withCheckable(false),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_changelog).withIcon(R.drawable.ic_changelog_dark).withIdentifier(5).withCheckable(false),
@@ -303,15 +303,15 @@ public class GridDeleteLayers extends ActionBarActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
 
                         if (drawerItem != null) {
-                            if (drawerItem.getIdentifier() == 1) {
-                                Intent intent = new Intent(GridDeleteLayers.this, menu.class);
-                                GridDeleteLayers.this.startActivity(intent);
-                            } else if (drawerItem.getIdentifier() == 2) {
+                            if (drawerItem.getIdentifier() == 2) {
+                         //       Intent intent = new Intent(GridDeleteLayers.this, menu.class);
+                         //       GridDeleteLayers.this.startActivity(intent);
+                         //   } else if (drawerItem.getIdentifier() == 2) {
                                 Intent intent = new Intent(GridDeleteLayers.this, BackUpRestore.class);
                                 GridDeleteLayers.this.startActivity(intent);
-                            } else if (drawerItem.getIdentifier() == 3) {
-                                Intent intent = new Intent(GridDeleteLayers.this, DeleteLayers.class);
-                                GridDeleteLayers.this.startActivity(intent);
+                         //   } else if (drawerItem.getIdentifier() == 3) {
+                         //       Intent intent = new Intent(GridDeleteLayers.this, DeleteLayers.class);
+                         //       GridDeleteLayers.this.startActivity(intent);
                             } else if (drawerItem.getIdentifier() == 4) {
                                 Intent intent = new Intent(GridDeleteLayers.this, About.class);
                                 GridDeleteLayers.this.startActivity(intent);

@@ -55,7 +55,7 @@ public class FullScreenViewActivity extends ActionBarActivity {
         viewPager.setCurrentItem(position);
     }
 
-    @Override
+    /**  @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
 
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -83,4 +83,5 @@ public class FullScreenViewActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+  */
 }

@@ -33,7 +33,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.COLORPICKER" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.COLORPICKER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -45,7 +45,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.CARDMANAGER" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.CARDMANAGER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -57,11 +57,12 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.GRIDMANAGER" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.GRIDMANAGER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".BackUpRestore"
             android:icon="@mipmap/ic_launcher"
@@ -69,7 +70,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.BACKUPRESTOR" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.BACKUPRESTOR" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -81,7 +82,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.CARDBACKUPRESTORE" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.CARDBACKUPRESTORE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -93,7 +94,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.GRIDBACKUPRETORE" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.GRIDBACKUPRETORE" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -105,7 +106,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.DELETELAYERS" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.DELETELAYERS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -117,7 +118,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.CARDDELETELAYERS" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.CARDDELETELAYERS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -129,7 +130,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.GRIDDELETELAYERS" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.GRIDDELETELAYERS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -138,10 +139,9 @@
             android:name=".Settings"
             android:icon="@mipmap/ic_launcher"
             android:label="Manager"
-            android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.SETTINGS" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.SETTINGS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -154,7 +154,7 @@
             android:parentActivityName=".menu"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.GRIDVIEWACTIVITY" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.GRIDVIEWACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -174,7 +174,7 @@
             android:parentActivityName=".GridViewActivity"
             android:theme="@style/LayersTheme">
             <intent-filter>
-                <action android:name="bs.layersmanager.DELETEPREVIEW" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.DELETEPREVIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -239,7 +239,7 @@
             android:icon="@mipmap/ic_launcher"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="bs.layersmanager.PLAYSU" />
+                <action android:name="com.lovejoy777.rroandlayersmanager.PLAYSU" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

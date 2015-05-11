@@ -189,7 +189,7 @@ public class GridManager extends ActionBarActivity {
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                 .addDrawerItems(
                         // new PrimaryDrawerItem().withName(R.string.drawer_item_compact_header).withIcon(GoogleMaterial.Icon.gmd_wb_sunny).withIdentifier(100).withCheckable(false),
-                        new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers).withIdentifier(1).withCheckable(false),
+                      //  new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers).withIdentifier(1).withCheckable(false),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_backups).withIcon(R.drawable.ic_backup).withIdentifier(2).withCheckable(false),
                         new PrimaryDrawerItem().withName(R.string.drawer_item_remove).withIcon(R.drawable.ic_delete).withIdentifier(3).withCheckable(false),
                         new DividerDrawerItem(),
@@ -210,10 +210,10 @@ public class GridManager extends ActionBarActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
 
                         if (drawerItem != null) {
-                            if (drawerItem.getIdentifier() == 1) {
-                                Intent intent = new Intent(GridManager.this, menu.class);
-                                GridManager.this.startActivity(intent);
-                            } else if (drawerItem.getIdentifier() == 2) {
+                            if (drawerItem.getIdentifier() == 2) {
+                           //     Intent intent = new Intent(GridManager.this, menu.class);
+                           //     GridManager.this.startActivity(intent);
+                           // } else if (drawerItem.getIdentifier() == 2) {
                                 Intent intent = new Intent(GridManager.this, BackUpRestore.class);
                                 GridManager.this.startActivity(intent);
                             } else if (drawerItem.getIdentifier() == 3) {
@@ -296,7 +296,7 @@ public class GridManager extends ActionBarActivity {
                     .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header
                     .addDrawerItems(
                             // new PrimaryDrawerItem().withName(R.string.drawer_item_compact_header).withIcon(GoogleMaterial.Icon.gmd_wb_sunny).withIdentifier(100).withCheckable(false),
-                            new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers_dark).withIdentifier(1).withCheckable(false),
+                           // new PrimaryDrawerItem().withName(R.string.drawer_item_manager).withIcon(R.drawable.ic_bitsyko_layers_dark).withIdentifier(1).withCheckable(false),
                             new PrimaryDrawerItem().withName(R.string.drawer_item_backups).withIcon(R.drawable.ic_backup_dark).withIdentifier(2).withCheckable(false),
                             new PrimaryDrawerItem().withName(R.string.drawer_item_remove).withIcon(R.drawable.ic_delete_dark).withIdentifier(3).withCheckable(false),
                             new DividerDrawerItem(),
@@ -317,10 +317,10 @@ public class GridManager extends ActionBarActivity {
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
 
                             if (drawerItem != null) {
-                                if (drawerItem.getIdentifier() == 1) {
-                                    Intent intent = new Intent(GridManager.this, menu.class);
-                                    GridManager.this.startActivity(intent);
-                                } else if (drawerItem.getIdentifier() == 2) {
+                                if (drawerItem.getIdentifier() == 2) {
+                               //     Intent intent = new Intent(GridManager.this, menu.class);
+                               //     GridManager.this.startActivity(intent);
+                              //  } else if (drawerItem.getIdentifier() == 2) {
                                     Intent intent = new Intent(GridManager.this, BackUpRestore.class);
                                     GridManager.this.startActivity(intent);
                                 } else if (drawerItem.getIdentifier() == 3) {
@@ -881,10 +881,9 @@ public class GridManager extends ActionBarActivity {
     public void onBackPressed() {
         super.onBackPressed();
         overridePendingTransition(R.anim.back2, R.anim.back1);
-        Intent k = new Intent(this, menu.class);
-        k.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(k);
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

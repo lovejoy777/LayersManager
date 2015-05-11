@@ -88,9 +88,9 @@ ADDED from AndroidManifest.xml:29:9
 		ADDED from AndroidManifest.xml:33:13
 	android:name
 		ADDED from AndroidManifest.xml:30:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.COLORPICKER
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.COLORPICKER
 ADDED from AndroidManifest.xml:35:13
-action#bs.layersmanager.COLORPICKER
+action#com.lovejoy777.rroandlayersmanager.COLORPICKER
 ADDED from AndroidManifest.xml:36:17
 	android:name
 		ADDED from AndroidManifest.xml:36:25
@@ -110,9 +110,9 @@ ADDED from AndroidManifest.xml:41:9
 		ADDED from AndroidManifest.xml:45:13
 	android:name
 		ADDED from AndroidManifest.xml:42:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.CARDMANAGER
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.CARDMANAGER
 ADDED from AndroidManifest.xml:47:13
-action#bs.layersmanager.CARDMANAGER
+action#com.lovejoy777.rroandlayersmanager.CARDMANAGER
 ADDED from AndroidManifest.xml:48:17
 	android:name
 		ADDED from AndroidManifest.xml:48:25
@@ -128,135 +128,133 @@ ADDED from AndroidManifest.xml:53:9
 		ADDED from AndroidManifest.xml:57:13
 	android:name
 		ADDED from AndroidManifest.xml:54:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.GRIDMANAGER
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.GRIDMANAGER
 ADDED from AndroidManifest.xml:59:13
-action#bs.layersmanager.GRIDMANAGER
+action#com.lovejoy777.rroandlayersmanager.GRIDMANAGER
 ADDED from AndroidManifest.xml:60:17
 	android:name
 		ADDED from AndroidManifest.xml:60:25
 activity#com.lovejoy777.rroandlayersmanager.BackUpRestore
-ADDED from AndroidManifest.xml:65:9
+ADDED from AndroidManifest.xml:66:9
 	android:noHistory
-		ADDED from AndroidManifest.xml:68:13
-	android:icon
-		ADDED from AndroidManifest.xml:67:13
-	android:theme
-		ADDED from AndroidManifest.xml:70:13
-	android:parentActivityName
 		ADDED from AndroidManifest.xml:69:13
+	android:icon
+		ADDED from AndroidManifest.xml:68:13
+	android:theme
+		ADDED from AndroidManifest.xml:71:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:70:13
 	android:name
-		ADDED from AndroidManifest.xml:66:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.BACKUPRESTOR
-ADDED from AndroidManifest.xml:71:13
-action#bs.layersmanager.BACKUPRESTOR
-ADDED from AndroidManifest.xml:72:17
+		ADDED from AndroidManifest.xml:67:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.BACKUPRESTOR
+ADDED from AndroidManifest.xml:72:13
+action#com.lovejoy777.rroandlayersmanager.BACKUPRESTOR
+ADDED from AndroidManifest.xml:73:17
 	android:name
-		ADDED from AndroidManifest.xml:72:25
+		ADDED from AndroidManifest.xml:73:25
 activity#com.lovejoy777.rroandlayersmanager.backups.CardBackupRestore
-ADDED from AndroidManifest.xml:77:9
+ADDED from AndroidManifest.xml:78:9
 	android:label
-		ADDED from AndroidManifest.xml:80:13
-	android:icon
-		ADDED from AndroidManifest.xml:79:13
-	android:theme
-		ADDED from AndroidManifest.xml:82:13
-	android:parentActivityName
 		ADDED from AndroidManifest.xml:81:13
+	android:icon
+		ADDED from AndroidManifest.xml:80:13
+	android:theme
+		ADDED from AndroidManifest.xml:83:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:82:13
 	android:name
-		ADDED from AndroidManifest.xml:78:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.CARDBACKUPRESTORE
-ADDED from AndroidManifest.xml:83:13
-action#bs.layersmanager.CARDBACKUPRESTORE
-ADDED from AndroidManifest.xml:84:17
+		ADDED from AndroidManifest.xml:79:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.CARDBACKUPRESTORE
+ADDED from AndroidManifest.xml:84:13
+action#com.lovejoy777.rroandlayersmanager.CARDBACKUPRESTORE
+ADDED from AndroidManifest.xml:85:17
 	android:name
-		ADDED from AndroidManifest.xml:84:25
+		ADDED from AndroidManifest.xml:85:25
 activity#com.lovejoy777.rroandlayersmanager.backups.GridBackupRestore
-ADDED from AndroidManifest.xml:89:9
+ADDED from AndroidManifest.xml:90:9
 	android:label
-		ADDED from AndroidManifest.xml:92:13
-	android:icon
-		ADDED from AndroidManifest.xml:91:13
-	android:theme
-		ADDED from AndroidManifest.xml:94:13
-	android:parentActivityName
 		ADDED from AndroidManifest.xml:93:13
+	android:icon
+		ADDED from AndroidManifest.xml:92:13
+	android:theme
+		ADDED from AndroidManifest.xml:95:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:94:13
 	android:name
-		ADDED from AndroidManifest.xml:90:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.GRIDBACKUPRETORE
-ADDED from AndroidManifest.xml:95:13
-action#bs.layersmanager.GRIDBACKUPRETORE
-ADDED from AndroidManifest.xml:96:17
+		ADDED from AndroidManifest.xml:91:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.GRIDBACKUPRETORE
+ADDED from AndroidManifest.xml:96:13
+action#com.lovejoy777.rroandlayersmanager.GRIDBACKUPRETORE
+ADDED from AndroidManifest.xml:97:17
 	android:name
-		ADDED from AndroidManifest.xml:96:25
+		ADDED from AndroidManifest.xml:97:25
 activity#com.lovejoy777.rroandlayersmanager.DeleteLayers
-ADDED from AndroidManifest.xml:101:9
+ADDED from AndroidManifest.xml:102:9
 	android:noHistory
-		ADDED from AndroidManifest.xml:104:13
-	android:icon
-		ADDED from AndroidManifest.xml:103:13
-	android:theme
-		ADDED from AndroidManifest.xml:106:13
-	android:parentActivityName
 		ADDED from AndroidManifest.xml:105:13
+	android:icon
+		ADDED from AndroidManifest.xml:104:13
+	android:theme
+		ADDED from AndroidManifest.xml:107:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:106:13
 	android:name
-		ADDED from AndroidManifest.xml:102:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.DELETELAYERS
-ADDED from AndroidManifest.xml:107:13
-action#bs.layersmanager.DELETELAYERS
-ADDED from AndroidManifest.xml:108:17
+		ADDED from AndroidManifest.xml:103:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.DELETELAYERS
+ADDED from AndroidManifest.xml:108:13
+action#com.lovejoy777.rroandlayersmanager.DELETELAYERS
+ADDED from AndroidManifest.xml:109:17
 	android:name
-		ADDED from AndroidManifest.xml:108:25
+		ADDED from AndroidManifest.xml:109:25
 activity#com.lovejoy777.rroandlayersmanager.deleters.CardDeleteLayers
-ADDED from AndroidManifest.xml:113:9
+ADDED from AndroidManifest.xml:114:9
 	android:label
-		ADDED from AndroidManifest.xml:116:13
-	android:icon
-		ADDED from AndroidManifest.xml:115:13
-	android:theme
-		ADDED from AndroidManifest.xml:118:13
-	android:parentActivityName
 		ADDED from AndroidManifest.xml:117:13
-	android:name
-		ADDED from AndroidManifest.xml:114:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.CARDDELETELAYERS
-ADDED from AndroidManifest.xml:119:13
-action#bs.layersmanager.CARDDELETELAYERS
-ADDED from AndroidManifest.xml:120:17
-	android:name
-		ADDED from AndroidManifest.xml:120:25
-activity#com.lovejoy777.rroandlayersmanager.deleters.GridDeleteLayers
-ADDED from AndroidManifest.xml:125:9
-	android:label
-		ADDED from AndroidManifest.xml:128:13
 	android:icon
-		ADDED from AndroidManifest.xml:127:13
+		ADDED from AndroidManifest.xml:116:13
 	android:theme
-		ADDED from AndroidManifest.xml:130:13
+		ADDED from AndroidManifest.xml:119:13
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:129:13
+		ADDED from AndroidManifest.xml:118:13
 	android:name
-		ADDED from AndroidManifest.xml:126:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.GRIDDELETELAYERS
-ADDED from AndroidManifest.xml:131:13
-action#bs.layersmanager.GRIDDELETELAYERS
-ADDED from AndroidManifest.xml:132:17
+		ADDED from AndroidManifest.xml:115:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.CARDDELETELAYERS
+ADDED from AndroidManifest.xml:120:13
+action#com.lovejoy777.rroandlayersmanager.CARDDELETELAYERS
+ADDED from AndroidManifest.xml:121:17
 	android:name
-		ADDED from AndroidManifest.xml:132:25
-activity#com.lovejoy777.rroandlayersmanager.Settings
-ADDED from AndroidManifest.xml:137:9
+		ADDED from AndroidManifest.xml:121:25
+activity#com.lovejoy777.rroandlayersmanager.deleters.GridDeleteLayers
+ADDED from AndroidManifest.xml:126:9
 	android:label
-		ADDED from AndroidManifest.xml:140:13
+		ADDED from AndroidManifest.xml:129:13
 	android:icon
-		ADDED from AndroidManifest.xml:139:13
+		ADDED from AndroidManifest.xml:128:13
+	android:theme
+		ADDED from AndroidManifest.xml:131:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:130:13
+	android:name
+		ADDED from AndroidManifest.xml:127:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.GRIDDELETELAYERS
+ADDED from AndroidManifest.xml:132:13
+action#com.lovejoy777.rroandlayersmanager.GRIDDELETELAYERS
+ADDED from AndroidManifest.xml:133:17
+	android:name
+		ADDED from AndroidManifest.xml:133:25
+activity#com.lovejoy777.rroandlayersmanager.Settings
+ADDED from AndroidManifest.xml:138:9
+	android:label
+		ADDED from AndroidManifest.xml:141:13
+	android:icon
+		ADDED from AndroidManifest.xml:140:13
 	android:theme
 		ADDED from AndroidManifest.xml:142:13
-	android:parentActivityName
-		ADDED from AndroidManifest.xml:141:13
 	android:name
-		ADDED from AndroidManifest.xml:138:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.SETTINGS
+		ADDED from AndroidManifest.xml:139:13
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.SETTINGS
 ADDED from AndroidManifest.xml:143:13
-action#bs.layersmanager.SETTINGS
+action#com.lovejoy777.rroandlayersmanager.SETTINGS
 ADDED from AndroidManifest.xml:144:17
 	android:name
 		ADDED from AndroidManifest.xml:144:25
@@ -274,9 +272,9 @@ ADDED from AndroidManifest.xml:149:9
 		ADDED from AndroidManifest.xml:154:13
 	android:name
 		ADDED from AndroidManifest.xml:150:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.GRIDVIEWACTIVITY
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.GRIDVIEWACTIVITY
 ADDED from AndroidManifest.xml:156:13
-action#bs.layersmanager.GRIDVIEWACTIVITY
+action#com.lovejoy777.rroandlayersmanager.GRIDVIEWACTIVITY
 ADDED from AndroidManifest.xml:157:17
 	android:name
 		ADDED from AndroidManifest.xml:157:25
@@ -304,9 +302,9 @@ ADDED from AndroidManifest.xml:170:9
 		ADDED from AndroidManifest.xml:174:13
 	android:name
 		ADDED from AndroidManifest.xml:171:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.DELETEPREVIEW
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.DELETEPREVIEW
 ADDED from AndroidManifest.xml:176:13
-action#bs.layersmanager.DELETEPREVIEW
+action#com.lovejoy777.rroandlayersmanager.DELETEPREVIEW
 ADDED from AndroidManifest.xml:177:17
 	android:name
 		ADDED from AndroidManifest.xml:177:25
@@ -400,9 +398,9 @@ ADDED from AndroidManifest.xml:237:9
 		ADDED from AndroidManifest.xml:239:13
 	android:name
 		ADDED from AndroidManifest.xml:238:13
-intent-filter#android.intent.category.DEFAULT+bs.layersmanager.PLAYSU
+intent-filter#android.intent.category.DEFAULT+com.lovejoy777.rroandlayersmanager.PLAYSU
 ADDED from AndroidManifest.xml:241:13
-action#bs.layersmanager.PLAYSU
+action#com.lovejoy777.rroandlayersmanager.PLAYSU
 ADDED from AndroidManifest.xml:242:17
 	android:name
 		ADDED from AndroidManifest.xml:242:25

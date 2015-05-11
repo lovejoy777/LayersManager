@@ -53,7 +53,7 @@
     <dimen name="card_topcolored_layout_minHeigth">72dp</dimen>
 
     <!-- SIMPLE CARD HEADER -->
-    <dimen name="card_base_empty_height">70dp</dimen>
+    <dimen name="card_base_empty_height">60dp</dimen>
     <dimen name="card_header_simple_title_margin_bottom">24dp</dimen>
     <dimen name="card_header_simple_title_margin_left">102dp</dimen>
     <dimen name="card_header_simple_title_margin_right">20dp</dimen>
@@ -65,8 +65,8 @@
     <!-- SIMPLE CARD THUMBNAIL <dimen name="card_main_simple_title_text_size">30sp</dimen>-->
     <dimen name="card_thumbnail_height">62dp</dimen>
     <dimen name="card_thumbnail_width">62dp</dimen>
-    <dimen name="card_main_simple_title_margin_top">24dp</dimen>
-    <dimen name="card_main_simple_title_margin_bottom">30dp</dimen>
+    <dimen name="card_main_simple_title_margin_top">14dp</dimen>
+    <dimen name="card_main_simple_title_margin_bottom">20dp</dimen>
     <dimen name="card_main_simple_title_margin_left">30dp</dimen>
     <dimen name="card_main_simple_title_margin_right">0dp</dimen>
 
@@ -92,5 +92,11 @@
 
     <dimen name="big_padding">16dp</dimen>
     <dimen name="small_padding">8dp</dimen>
+
+    <!-- FAB. -->
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="labels_text_size">14sp</dimen>
+
 
 </resources>

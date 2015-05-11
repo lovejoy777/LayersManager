@@ -396,10 +396,10 @@ public class Settings extends ActionBarActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        overridePendingTransition(R.anim.back2, R.anim.back1);
-        Intent k = new Intent(this, menu.class);
-        k.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(k);
+        Intent i = getBaseContext().getPackageManager()
+                .getLaunchIntentForPackage( getBaseContext().getPackageName() );
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(i);
     }
 
     @Override
