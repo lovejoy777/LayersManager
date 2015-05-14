@@ -52,7 +52,6 @@ import com.lovejoy777.rroandlayersmanager.R;
 import com.lovejoy777.rroandlayersmanager.Settings;
 import com.lovejoy777.rroandlayersmanager.commands.RootCommands;
 import com.lovejoy777.rroandlayersmanager.filepicker.FilePickerActivity;
-import com.lovejoy777.rroandlayersmanager.menu;
 import it.gmariotti.cardslib.library.internal.Card;
 import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
 import it.gmariotti.cardslib.library.internal.CardHeader;
@@ -394,7 +393,6 @@ public class CardManager extends ActionBarActivity {
 
                     if (finalI == 0) {
 
-                       // startActivity(new Intent("bs.layersmanager.LAYERSCHOOSER"));
                         Intent i = new Intent(Intent.ACTION_GET_CONTENT);
 
                        // Set these depending on your use case. These are the defaults.
@@ -425,7 +423,6 @@ public class CardManager extends ActionBarActivity {
 
                     if (finalI == 2) {
 
-                        //startActivity(new Intent("bs.layersmanager.LAYERSCHOOSER"));
                         Intent i = new Intent(Intent.ACTION_GET_CONTENT);
                         // Set these depending on your use case. These are the defaults.
                         i.putExtra(FilePickerActivity.EXTRA_ALLOW_MULTIPLE, false);

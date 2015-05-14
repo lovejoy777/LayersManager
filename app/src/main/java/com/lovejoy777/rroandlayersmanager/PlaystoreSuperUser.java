@@ -2,10 +2,8 @@ package com.lovejoy777.rroandlayersmanager;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 
 /**
  * Created by lovejoy on 27/12/14.

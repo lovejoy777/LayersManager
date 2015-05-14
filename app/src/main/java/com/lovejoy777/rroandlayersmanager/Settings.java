@@ -279,7 +279,7 @@ public class Settings extends ActionBarActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent("bs.layersmanager.COLORPICKER"));
+                startActivity(new Intent("com.lovejoy777.rroandlayersmanager.COLORPICKER"));
 
             }
         });
@@ -309,7 +309,7 @@ public class Settings extends ActionBarActivity {
             }
         });
 
-        // BUTTON 3 open menu
+        // BUTTON 3 restart app
         Button button3 = (Button) findViewById(R.id.button3);
 
         // RESTART APP BUTTON
@@ -324,7 +324,7 @@ public class Settings extends ActionBarActivity {
 
                 Toast.makeText(Settings.this, "Set", Toast.LENGTH_LONG).show();
 
-                // finish();
+                 finish();
 
 
             }
@@ -396,10 +396,7 @@ public class Settings extends ActionBarActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent i = getBaseContext().getPackageManager()
-                .getLaunchIntentForPackage( getBaseContext().getPackageName() );
-        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(i);
+        overridePendingTransition(R.anim.back2, R.anim.back1);
     }
 
     @Override

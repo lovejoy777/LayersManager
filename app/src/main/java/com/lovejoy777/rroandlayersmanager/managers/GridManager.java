@@ -54,7 +54,6 @@ import com.lovejoy777.rroandlayersmanager.R;
 import com.lovejoy777.rroandlayersmanager.Settings;
 import com.lovejoy777.rroandlayersmanager.commands.RootCommands;
 import com.lovejoy777.rroandlayersmanager.filepicker.FilePickerActivity;
-import com.lovejoy777.rroandlayersmanager.menu;
 
 /**
  * Created by lovejoy on 03/04/15.
