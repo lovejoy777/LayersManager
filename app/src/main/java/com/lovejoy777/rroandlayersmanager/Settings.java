@@ -292,19 +292,23 @@ public class Settings extends ActionBarActivity {
             @Override
             public void onClick(View v) {
 
+                try {
+                    EditText tv = (EditText) findViewById(R.id.textView8);
 
-                EditText tv = (EditText) findViewById(R.id.textView8);
+                    String hexbgcolor = tv.getText().toString();
 
-                String hexbgcolor = tv.getText().toString();
+                    int bgcolor = Color.parseColor(hexbgcolor);
 
-                int bgcolor = Color.parseColor(hexbgcolor);
+                    backgroundColor(bgcolor);
+                }
+                catch (Exception e) {
+                    System.out.println(e);
+                    Toast.makeText(Settings.this, "Error: no value set", Toast.LENGTH_LONG).show();
+                }
 
-                backgroundColor(bgcolor);
-
-              //  Toast.makeText(Settings.this, "Color Set", Toast.LENGTH_LONG).show();
+                //  Toast.makeText(Settings.this, "Color Set", Toast.LENGTH_LONG).show();
 
                 // finish();
-
 
             }
         });
